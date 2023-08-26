@@ -9,3 +9,34 @@
 .content{
     color: orange;
 }
+
+#Halcon{
+    width: 400px;
+    height: 200px;
+}
+
+th, td{
+    padding: 10px;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+#columna3{
+    background-color: green;
+}
+
+#columna4{
+    background-color: lawngreen;
+}
+
+table{
+    height: 250px;
+    width: 70%;
+}
+
+#conjunto{
+    width: 300px;
+}

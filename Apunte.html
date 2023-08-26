@@ -7,8 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <h1><u>Información y etiquetas de HTML.</u></h1>
+    <h2><u>Índice.</u></h2>
+    <div>
+        <ul>
+            <li><a href="#Información general de HTML">Información general de HTML</a></li>
+            <br>
+            <li><a href="#Un hipervínculo en HTML">Un hipervínculo en HTML</a></li>
+            <br>
+            <li><a href="#Una imagen en HTML.">Una imagen en HTML.</a></li>
+            <br>
+            <li><a href="#Tablas de HTML">Tablas de HTML</a></li>
+            <br>
+            <li><a href="#Listas de HTML">Listas de HTML</a></li>
+            <br>
+            <li><a href="#Formularios de HTML.">Formularios de HTML.</a></li>
+        </ul>
+        
+    </div>
     <ul>
+        <h2 id="Información general de HTML"><u>Información general de HTML.</u></h2>
         <li><b>HTML</b> es un lenguaje de programación con el que se hacen las <b>páginas web</b> y <b>aplicaciones</b>.</li>
         <br>
         <li>HTML significa <b>Hyper Text Markup Languaje</b>.</li>
@@ -23,19 +42,23 @@
         <br>
         <li>HTML está compuesto por <b>etiquetas</b>, y cada etiqueta tiene <b>contenido</b>.</li>
         <br>
-        <li><span class="element">&lt!DOCTYPE&gt</span> define el tipo de documento y la versión del HTML usado.</li>
+        <li>La <b>estructura inicial o básica</b> de un documento HTML se compone de:</li>
         <br>
-        <li><span class="element">&lthtml&gt</span> contiene cada elemento del HTML excepto !DOCTYPE, describe la página web.</li>
-        <br>
-        <li><span class="element">&lthead&gt</span> contiene info. que describe el documento, pero que no aparece con él.</li>
-        <br>
-        <li><span class="element">&lttitle&gt</span> título de la página que aparece en el navegador, se inserta en head.</li>
-        <br>
-        <li><span class="element">&ltbody&gt</span> su contenido es visible para el usuario, contenido principal de HTML.</li>
-        <br>
-        <li><span class="element">&lth1&gt</span> primer nivel de heading de la página, son 6 niveles.</li>
-        <br>
-        <li><span class="element">&ltp&gt</span> su contenido es el de un párrafo de la página.</li>
+            <ul>
+            <li><span class="element">&lt!DOCTYPE&gt</span> define el tipo de documento y la versión del HTML usado.</li>
+            <br>
+            <li><span class="element">&lthtml&gt</span> contiene cada elemento del HTML excepto !DOCTYPE, describe la página web.</li>
+            <br>
+            <li><span class="element">&lthead&gt</span> contiene info. que describe el documento, pero que no aparece con él.</li>
+            <br>
+            <li><span class="element">&lttitle&gt</span> título de la página que aparece en el navegador, se inserta en head.</li>
+            <br>
+            <li><span class="element">&ltbody&gt</span> su contenido es visible para el usuario, contenido principal de HTML.</li>
+            <br>
+            <li><span class="element">&lth1&gt</span> primer nivel de heading de la página, son 6 niveles.</li>
+            <br>
+            <li><span class="element">&ltp&gt</span> su contenido es el de un párrafo de la página.</li>
+            </ul>
         <br>
         <li><b>Tim Berners-Lee</b> creó HTML, y lo lanzó en 1991.</li>
         <br>    
@@ -131,6 +154,7 @@
             </ul>
         <br>
         <li>Las etiquetas de frase que definen la estructura de un bloque de texto y sus semánticas son:</li>
+        <br>
             <ul>
                 <li><span class="element">&ltem&gt</span> hace lo mismo que &lti&gt, pero con extra semánticas. <em>Texto</em></li>
                 <br>
@@ -141,7 +165,374 @@
                 <li><span class="element">&ltabbr&gt</span> se usa para abreviar texto. <abbr title="Hyper Text Markup Language">HTML</abbr></li>
                 <br>
                 <li><span class="element">&ltdfn&gt</span> pone texto a definir en cursiva. <dfn>Definición</dfn></li>
-            </ul>      
+                <br>
+                <li><span class="element">&ltcode&gt</span> se usa para poner código de computadora en formato de texto. <code>&ltp&gtTexto&ltp/&gt</code></li>
+                <br>
+                <li><span class="element">&ltkbd&gt</span> se usa para representar teclas del Keyboard. <dfn>Enter + C</dfn></li>
+                <br>
+                <li><span class="element">&ltaddress&gt</span> etiqueta de bloque que representa info. del autor de la página. <address>Número: 1547892614</address></li>
+            </ul>
+        <h2 id="Un hipervínculo en HTML"><u>Un hipervínculo en HTML.</u></h2>
+        <li><span class="element">&lta&gt</span> crea un hyperlink a otra página, carpeta o URL.</li>      
+        <br>
+        
+            <ul>
+                <li><span class="atribute">href=""</span> es el atributo más importante de &lta&gt, contiene el link de la página o URL a la que desea llegar.</li>
+                <br>
+                <li><span class="atribute">target="_blank"</span> es un atributo que se usa para que el link se abra en una nueva pestaña.</li>
+                <br>
+                <li><a href="https://www.anipedia.net/aguilas/" target="_blank" title='href="https://www.anipedia.net/aguilas/" target="_blank"'>Águilas</a></li>
+            </ul>
+        <h2 id="Una imagen en HTML."><u>Una imagen en HTML.</u></h2>
+        <li><span class="element">&ltimg&gt</span> despliega una imagen en la página web, no tiene contenido o etiqueta de cierre.</li>
+        <br>
+            <ul>
+                <li><span class="atribute">src=""</span> contiene la fuente o camino de la imagen, nos dice donde buscarla.</li>
+                <br>
+                <li><span class="atribute">alt=""</span> contiene texto alternativo que aparece en el lugar de la imagen en caso de no ser desplegada.</li>
+                <br>
+                <li><span class="atribute">width=""</span> y <span class="atribute">height=""</span> definen el ancho y el alto de la imagen, y ambos se usan en CSS.</li>
+                <br>
+                <img id="Halcon" src="Halcon.jpeg" alt="Imagen de Halcón Peregrino" title='src="Halcon.jpeg" alt="Imagen de Halcón Peregrino"'>
+            </ul>
+        <br>
+        <h2 id="Tablas de HTML"><u>Tablas de HTML.</u></h2>
+        <li>Una tabla en HTML se compone con muchas etiquetas y atributos:</li>
+        <br>
+            <ul>
+                <li><span class="element">&lttable&gt</span> abre y cierra el cuadro de la imagen, en su interior están las etiquetas que definen la tabla.</li>
+                <br>
+                <li><span class="element">&lttr&gt</span> define una fila(row) de la tabla.</li>
+                <br>
+                <li><span class="element">&ltth&gt</span> define el titulo(header) de la columna.</li>
+                <br>
+                <li><span class="element">&lttd&gt</span> define el contenido(data) de cada espacio de la tabla.</li>
+                <br>
+                <li><span class="element">&ltcaption&gt</span> título de la parte de la tabla.</li>
+                <br>
+                <li><span class="element">&ltcolgroup&gt</span> especifica un grupo de columnas para personalizarlas.</li>
+                <br>
+                <li><span class="element">&ltcol&gt</span> se usa en &ltcolgroup&gt para especificar la columna.</li>
+                <br>
+                <li><span class="element">&ltthead&gt</span> agrupa todos los &ltth&gt.</li>
+                <br>
+                <li><span class="element">&lttbody&gt</span> agrupa el contenido general de la tabla, excepto la superior.</li>
+                <br>
+                <li><span class="atribute">border=""</span> especifica el borde de la tabla.</li>
+                <br>
+                <li><span class="atribute">padding=""</span> especifica el relleno de los &ltth&gt y &lttd&gt.</li>
+                <br>
+                <li><span class="atribute">width=""</span> especifica el ancho de la en <b>%</b> o <b>px</b>.</li>
+                <br>
+                <li><span class="atribute">height=""</span>especifica el alto del &lttable&gt, y solo puede ponerse en px.</li>
+                <br>
+                <li><span class="atribute">border-collapse: collapse;</span> colapsa los bordes en uno solo.</li>
+                <br>
+                <li><span class="atribute">colspan=""</span> se usa para que una columna tenga dos espacios para escribir.</li>
+                <br>
+                <li><span class="atribute">rowspan=""</span> se usa para que una fila tenga dos espacios para escribir.</li>
+                <br>
+                <table title='<caption>Tabla de prueba</caption>
+                    <colgroup>
+                        <col style="background-color: red;">
+                        <col style="background-color: blue;">
+                        <col id="columna3">
+                        <col id="columna4">
+                    </colgroup>
+                    <thead>
+                        <th>1º Columna</th>
+                        <th>2º Columna</th>
+                        <th>3º Columna</th>
+                        <th>4º Columna</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1º Columna 1º Espacio</td>
+                            <td>1º Columna 2º Espacio</td>
+                            <td>1º Columna 3º Espacio</td>
+                            <td>1º Columna 4º Espacio</td>
+                        </tr>
+                        <tr>
+                            <td>2º Columna 1º Espacio</td>
+                            <td>2º Columna 2º Espacio</td>
+                            '>
+                    <caption>Tabla de prueba</caption>
+                    <colgroup>
+                        <col style="background-color: red;">
+                        <col style="background-color: blue;">
+                        <col id="columna3">
+                        <col id="columna4">
+                    </colgroup>
+                    <thead>
+                        <th>1º Columna</th>
+                        <th>2º Columna</th>
+                        <th>3º Columna</th>
+                        <th>4º Columna</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1º Columna 1º Espacio</td>
+                            <td>1º Columna 2º Espacio</td>
+                            <td>1º Columna 3º Espacio</td>
+                            <td>1º Columna 4º Espacio</td>
+                        </tr>
+                        <tr>
+                            <td>2º Columna 1º Espacio</td>
+                            <td>2º Columna 2º Espacio</td>
+                            <td>2º Columna 3º Espacio</td>
+                            <td>2º Columna 4º Espacio</td>
+                        </tr>
+                        <tr>
+                            <td>3º Columna 1º Espacio</td>
+                            <td>3º Columna 2º Espacio</td>
+                            <td>3º Columna 3º Espacio</td>
+                            <td>3º Columna 4º Espacio</td>
+                        </tr>
+                        <tr>
+                            <td>4º Columna 1º Espacio</td>
+                            <td>4º Columna 2º Espacio</td>
+                            <td>4º Columna 3º Espacio</td>
+                            <td>4º Columna 4º Espacio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ul>
+        <br>
+        <br>
+        <h2 id="Listas de HTML"><u>Listas de HTML.</u></h2>
+        <li>Hay varios tipos de listas en HTML:</li>
+        <br>
+            <ol>
+                <li><span class="element">&ltol&gt</span> produce una lista ordenada por números o letras.</li>       
+            </ol>
+            <br>
+            <ul>
+                <li><span class="element">&ltul&gt</span> produce una lista desordena cuyos items están marcados por símbolos como círculos o cuadrados.</li>
+            </ul>
+            <dl>
+                <dt><span class="element">&ltdl&gt</span></dt>
+                <dd>Produce una lista de definiciones.</dd>
+                <br>
+                <dt><span class="element">&ltdt&gt</span></dt>
+                <dd>Definition term, el término que se va a definir.</dd>
+                <br>
+                <dt><span class="element">&ltdd&gt</span></dt>           
+                <dd>Definition data, información del término que se define.</dd>
+            </dl>
+        <br>
+        <li>Una lista ordenada puede tener letras o números, y estar en cualquier orden.</li>
+        <br>
+            <ol type="1">
+                <li><span class="atribute">type="1"</span> ordena la lista con números.</li>
+            </ol>
+                <br>
+            <ol type="I">
+                <li><span class="atribute">type="I"</span> ordena la lista con números romanos en mayúscula.</li>
+            </ol>
+            <br>
+            <ol type="i">
+                <li><span class="atribute">type="i"</span> ordena la lista con números romanos en minúscula.</li>
+            </ol>
+            <br>
+            <ol type="A">
+                <li><span class="atribute">type="A"</span> ordena la lista con letras mayúsculas.</li>
+            </ol>
+            <br>
+            <ol type="a">
+                <li><span class="atribute">type="a"</span> ordena la lista con letras minúsculas.</li>
+            </ol>
+            <br>
+            <ol start="5">
+                <li><span class="atribute">start="5"</span> comienza la lista con el valor que le insertes.</li>
+            </ol>
+            <br>
+            <ul>
+                <li><span class="atribute">reversed</span> voltea el orden de la lista.</li>
+            </ul>
+        <br>
+        <li>Una lista no ordenada se ordena con símbolos:</li>
+        <br>
+            <ul type="circle">
+                <li><span class="atribute">type="circle"</span> ordena la lista con circulos.</li>
+            </ul>
+            <br>
+            <ul type="square">
+                <li><span class="atribute">type="square"</span> ordena la lista con cuadrados.</li>
+            </ul>
+            <br>
+            <ul type="disc">
+                <li><span class="atribute">type="disc"</span> ordena la lista al igual que su estilo predeterminado.</li>
+            </ul>
+            <br>
+            <ul type="none">
+                <li><span class="atribute">type="none"</span> la lista no tiene marcas.</li>
+            </ul>
+        <br>
+        <h2 id="Formularios de HTML."><u>Formularios de HTML.</u></h2>
+        <li><span class="element">&ltform&gt</span> marca una sección del documento que contiene controles con los que el usuario puede interactuar, como contraseñas, botones, preguntas de opción múltiple, y muchas otras.</li>
+        <br>
+            <ul>
+                <li><span class="element">&ltinput&gt</span> se inserta dentro de form, define un control de input, una línea de texto.</li>
+                <br>
+                    <ul>
+                        <li><span class="element">&ltlabel&gt</span> representa una etiqueta para los input, describe la información que se debe insertar.</li>
+                        <br>
+                        <li><span class="atribute">value=""</span> le asigna un valor, propiedad o función diferente al &ltinput&gt según el tipo que sea.</li>
+                        <br>
+                        <li><span class="atribute">id=""</span> atributo de &ltinput&gt para conectarlo con su &ltlabel&gt, el label tiene el <span class="atribute">for=""</span>, y ambos deben ser iguales.</li>
+                        <br>
+                        <li><span class="atribute">for=""</span> atributo de &ltlabel&gt para conectarlo con su &ltinput&gt, el input tiene el <span class="atribute">id=""</span>, y ambos deben ser iguales.</li>
+                        <br>
+                        <li><span class="atribute">placeholder=""</span> texto que aparece en el input antes de insertar algo en él.</li>
+                        <br>
+                        <form action="">
+                            <label for="prueba">Input de prueba:</label><br><input type="text" placeholder="Prueba" id="prueba">
+                        </form>
+                    </ul>
+                <br>
+                <li><span class="element">&lttextarea&gt</span> define un control input de más de una línea de texto.</li>
+                <br>
+                    <ul>
+                        <li><span class="atribute">rows=""</span> define la cantidad de filas.</li>
+                        <br>
+                        <li><span class="atribute">cols=""</span> define la cantidad de columnas.</li>
+                        <br>
+                        <form action="">
+                            <textarea name="Área de texto" id="texto_largo" cols="30" rows="5"></textarea>
+                        </form>
+                    </ul>
+                <br>
+                <li><span class="element">&ltfieldset&gt</span> agrupa varios campos de control, y los rodea con un borde predeterminado.</li>
+                <br>
+                    <ul>
+                        <li><span class="element">&ltlegend&gt</span> es el caption del fieldset, algo como un minitítulo.</li>
+                        <br>
+                        <form action="">
+                            <fieldset id="conjunto">
+                                <legend>Fieldset de Prueba</legend>
+                                <label for="">Nombre</label>: <input type="text" name="" id="">
+                                <br>
+                                <br>
+                                <label for="">Apellido</label>: <input type="text" name="" id="">
+                            </fieldset>
+                        </form>     
+                    </ul>
+                <br>
+                <li><span class="element">&ltselect&gt</span> comienza y termina una lista de dropdown.</li>
+                <br>
+                    <ul>
+                        <li><span class="element">&ltoptgroup&gt</span> define un grupo de opciones relacionadas en un dropdown list.</li>
+                        <br>
+                        <li><span class="element">&ltoption&gt</span> define una opción en un dropdown list.</li>
+                        <br>
+                        <select name="" id="dropdown">
+                            <option value="">Todos me gustan</option>
+                            <optgroup label="Águilas">
+                                <option value="">Águila Calva</option>
+                                <option value="">Águla Arpía</option>
+                            </optgroup>
+                            <optgroup label="Halcones">
+                                <option value="">Halcón Peregrino</option>
+                                <option value="">Halcón Negro</option>
+                            </optgroup>
+                        </select>
+                    </ul>
+                <br>
+                <li><span class="element">&ltbutton&gt</span> define un botón clickeable.</li>
+                <br>
+                <button>Botón</button>
+            </ul>
+        <br>
+        <li>El atributo <span class="atribute">type=""</span> de <span class="element">&ltinput&gt</span> puede ser de varios tipos:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">type="text"</span> define un &ltinput&gt de texto.</li>
+                <br>
+                <li><span class="atribute">type="password"</span> define un &ltinput&gt para ingresar una contraseña.</li>
+                <br>
+                <li><span class="atribute">type="submit"</span> define un botón para entregar el &ltform&gt.</li>
+                <br>
+                <li><span class="atribute">type="reset"</span> define un botón para reinicar el &ltform&gt.</li>
+                <br>
+                <li><span class="atribute">type="radio"</span> define un botón de radio para seleccionar solo una opción correcta.</li>
+                <br>
+                <li><span class="atribute">type="checkbox"</span> define una caja para seleccionar más de una opción.</li>
+                <br>
+                <li><span class="atribute">type="button"</span> define un botón cuya función puede ser programada.</li>
+                <br>
+                <li><span class="atribute">type="file"</span> un input para seleccionar una carpeta de almacenamiento.</li>
+                <br>
+                <li><span class="atribute">type="image"</span> define un botón con la apariencia de una imagen, al presionarse envía el &ltform&gt al que pertenezca.</li>
+                <br>
+                <li><span class="atribute">type="color"</span> define un color con un color específico.</li>
+                <br>
+                <li><span class="atribute">type="date"</span> define un &ltinput&gt para insertar una fecha.</li>
+                <br>
+                <li><span class="atribute">type="datetime-local"</span> define un &ltinput&gt para ingresar una fecha local.</li>
+                <br>
+                <li><span class="atribute">type="email"</span> define un &ltinput&gt para un email.</li>
+                <br>
+                <li><span class="atribute">type="month"</span> define un &ltinput&gt para inf¡gresar un mes.</li>
+                <br>
+                <li><span class="atribute">type="number"</span> define un &ltinput&gt para un número.</li>
+                <br>
+                <li><span class="atribute">type="url"</span> define un &ltinput&gt para un URL.</li>
+                <br>
+                <li><span class="atribute">type="week"</span> define un &ltinput&gt para seleccionar una semana del año.</li> 
+                <br>
+                <li><span class="atribute">type="search"</span> define un &ltinput&gt para búsqueda.</li>
+                <br>
+                <li><span class="atribute">type="tel"</span> define un &ltinput&gt para ingresar un número de telefono.</li>
+            </ul>
+        <br>
+        <li>El elemento HTML <span class="element">&ltform&gt</span> tiene varios atributos:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">action=""</span> define a donde vas a enviar el &ltform&gt, ya sea un mail o una página web.</li>
+                <br>
+                <li><span class="atribute">method=""</span> define el método por el cual se envía el formulario. Sus valores pueden ser:</li>
+                <br>
+                    <ul>
+                        <li><span class="atribute">method="get"</span> envía los datos y la URL del formulario, cualqiera es capaz de verlo, por lo que se considera poco seguro.</li>
+                        <br>
+                        <li><span class="atribute">method="post"</span> envía los datos del formulario pero no la URL, no son visibles para nadie excepto a quien se lo envíes, es un método muy seguro.</li>
+                    </ul>
+                <br>
+                <li><span class="atribute">target=""</span> define donde abrir la respuesta de que se envió el formulario. Hay 2 opciones principales:</li>
+                <br>
+                    <ul>
+                        <li><span class="atribute">target="_self"</span> abre la respuesta en la página actual.</li>
+                        <br>
+                        <li><span class="atribute">target="_blank"</span> abre la respuesta en una nueva pestaña.</li>
+                    </ul>
+                <br>
+                <li><span class="atribute">autocomplete=""</span> define si el form puede completarse solo, sus 2 posibilidades son <span class="atribute">on</span> y <span class="atribute">off</span>.</li>
+                <br>
+                <li><span class="atribute">enctype=""</span> define el tipo de codificación del &ltform&gt al entregarse.</li>
+                <br>
+                    <ul>
+                        <li><span class="atribute">application/x-www-form-urlencoded</span> codifica los caracteres antes de la entrega.</li>
+                        <br>
+                        <li><span class="atribute">multipart/form-data</span> se usa al tener que subir carpetas.</li>
+                        <br>
+                        <li><span class="atribute">text/plain</span> los caracteres no se modifican, excepto los espacios reemplazandolos por +.</li>
+                    </ul>
+                <br>
+                <li><span class="atribute">novalidate</span> el &ltform&gt no se valida al entregarse.</li>
+            </ul>
+        <br>
+        <li>El elemento <span class="element">&ltinput&gt</span> tiene muchos atributos también:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">name=""</span> define el nombre del &ltinput&gt, representa su valor al momento de la entrega.</li>
+                <br>
+                <li><span class="atribute">value=""</span> define el valor del &ltinput&gt.</li>
+                <br>
+                <li><span class="atribute">requiered</span> especifica que el &ltinput&gt debe ser completado antes de entregarse.</li>
+                <br>
+                <li></li>
+            </ul>
+        <br>
     </ul>
 </body>
 </html>
