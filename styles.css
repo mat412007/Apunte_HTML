@@ -6,6 +6,14 @@
     color: red
 }
 
+.property{
+    color: rgb(3, 207, 34);
+}
+
+.javascript{
+    color: rgba(155, 8, 181, 0.991);
+}
+
 .content{
     color: orange;
 }

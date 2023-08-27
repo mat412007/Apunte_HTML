@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
     <h1><u>Información y etiquetas de HTML.</u></h1>
     <h2><u>Índice.</u></h2>
     <div>
@@ -23,6 +22,12 @@
             <li><a href="#Listas de HTML">Listas de HTML</a></li>
             <br>
             <li><a href="#Formularios de HTML.">Formularios de HTML.</a></li>
+            <br>
+            <li><a href="#CSS en HTML">CSS en HTML.</a></li>
+            <br>
+            <li><a href="#Página Web dentro de HTML">Página Web dentro de HTML.</a></li>
+            <br>
+            <li><a href="#JavaScript en HTML">JavaScript en HTML.</a></li>
         </ul>
         
     </div>
@@ -446,43 +451,65 @@
         <li>El atributo <span class="atribute">type=""</span> de <span class="element">&ltinput&gt</span> puede ser de varios tipos:</li>
         <br>
             <ul>
-                <li><span class="atribute">type="text"</span> define un &ltinput&gt de texto.</li>
+                <li><span class="atribute">type="text"</span> define un &ltinput&gt de texto. <label for="texto">Texto: </label><input type="text"></li>
                 <br>
-                <li><span class="atribute">type="password"</span> define un &ltinput&gt para ingresar una contraseña.</li>
+                <li><span class="atribute">type="password"</span> define un &ltinput&gt para ingresar una contraseña. <label for="contraseña">Contraseña: </label><input type="password" name="" id=""></li>
                 <br>
-                <li><span class="atribute">type="submit"</span> define un botón para entregar el &ltform&gt.</li>
+                <li><span class="atribute">type="submit"</span> define un botón para entregar el &ltform&gt. <label for="">Entregar: </label><input type="submit" value="Submit"></li>
                 <br>
-                <li><span class="atribute">type="reset"</span> define un botón para reinicar el &ltform&gt.</li>
+                <li><span class="atribute">type="reset"</span> define un botón para reinicar el &ltform&gt. <label for="">Reiniciar: </label><input type="reset" value="Reset"></li>
                 <br>
                 <li><span class="atribute">type="radio"</span> define un botón de radio para seleccionar solo una opción correcta.</li>
                 <br>
+                <label for="">¿Cuál es la velocidad del halcón peregrino?</label>
+                <br>
+                <input type="radio" name="onechoice" id=""><label for="">300km/h.</label>
+                <br>
+                <input type="radio" name="onechoice" id=""><label for="">350km/h.</label>
+                <br>
+                <input type="radio" name="onechoice" id=""><label for="">390km/h.</label>
+                <br>
+                <input type="radio" name="onechoice" id=""><label for="">400km/h.</label>
+                <br><br>
                 <li><span class="atribute">type="checkbox"</span> define una caja para seleccionar más de una opción.</li>
                 <br>
-                <li><span class="atribute">type="button"</span> define un botón cuya función puede ser programada.</li>
+                <label for="">Marquen los componenetes de un CPU.</label>
                 <br>
-                <li><span class="atribute">type="file"</span> un input para seleccionar una carpeta de almacenamiento.</li>
+                <input type="checkbox" name="componentes" id=""><label for="">Motherboard.</label>
                 <br>
-                <li><span class="atribute">type="image"</span> define un botón con la apariencia de una imagen, al presionarse envía el &ltform&gt al que pertenezca.</li>
+                <input type="checkbox" name="componentes" id=""><label for="">Monitor.</label>
                 <br>
-                <li><span class="atribute">type="color"</span> define un color con un color específico.</li>
+                <input type="checkbox" name="componentes" id=""><label for="">Memoria RAM.</label>
                 <br>
-                <li><span class="atribute">type="date"</span> define un &ltinput&gt para insertar una fecha.</li>
+                <input type="checkbox" name="componentes" id=""><label for="">Keyboard.</label>
+                <br><br>
+                <li><span class="atribute">type="button"</span> define un botón cuya función puede ser programada. <input type="button" value="Botón"></li>
                 <br>
-                <li><span class="atribute">type="datetime-local"</span> define un &ltinput&gt para ingresar una fecha local.</li>
+                <li><span class="atribute">type="file"</span> un input para seleccionar una carpeta de almacenamiento. <input type="file" name="" id=""></li>
                 <br>
-                <li><span class="atribute">type="email"</span> define un &ltinput&gt para un email.</li>
+                <li><span class="atribute">type="image"</span> define un botón con la apariencia de una imagen, al presionarse envía el &ltform&gt al que pertenezca, actúa como un submit.</li>
                 <br>
-                <li><span class="atribute">type="month"</span> define un &ltinput&gt para inf¡gresar un mes.</li>
+                <input type="image" src="Aguila harpia.jpg" alt="Imagen de águila harpía" height="200px" style="border: 2px solid black;">
+                <br><br>
+                <li><span class="atribute">type="color"</span> define un &ltinput&gt con un color específico. <input type="color" name="" id=""></li>
                 <br>
-                <li><span class="atribute">type="number"</span> define un &ltinput&gt para un número.</li>
+                <li><span class="atribute">type="date"</span> define un &ltinput&gt para insertar una fecha. <input type="date" name="" id=""></li>
                 <br>
-                <li><span class="atribute">type="url"</span> define un &ltinput&gt para un URL.</li>
+                <li><span class="atribute">type="datetime-local"</span> define un &ltinput&gt para ingresar una fecha local, año, mes, día, y la hora.<input type="datetime-local" name="" id=""></li>
                 <br>
-                <li><span class="atribute">type="week"</span> define un &ltinput&gt para seleccionar una semana del año.</li> 
+                <li><span class="atribute">type="email"</span> define un &ltinput&gt para un email. <input type="email" name="" id=""></li>
                 <br>
-                <li><span class="atribute">type="search"</span> define un &ltinput&gt para búsqueda.</li>
+                <li><span class="atribute">type="month"</span> define un &ltinput&gt para inf¡gresar un mes. <input type="month" name="" id=""></li>
                 <br>
-                <li><span class="atribute">type="tel"</span> define un &ltinput&gt para ingresar un número de telefono.</li>
+                <li><span class="atribute">type="number"</span> define un &ltinput&gt para un número. <input type="number" name="" id=""></li>
+                <br>
+                <li><span class="atribute">type="url"</span> define un &ltinput&gt para un URL. <input type="url" name="" id=""></li>
+                <br>
+                <li><span class="atribute">type="week"</span> define un &ltinput&gt para seleccionar una semana del año. <input type="week" name="" id=""></li> 
+                <br>
+                <li><span class="atribute">type="search"</span> define un &ltinput&gt para búsqueda. <input type="search" name="" id=""></li>
+                <br>
+                <li><span class="atribute">type="tel"</span> define un &ltinput&gt para ingresar un número de telefono. <input type="tel" name="" id=""></li>
             </ul>
         <br>
         <li>El elemento HTML <span class="element">&ltform&gt</span> tiene varios atributos:</li>
@@ -519,20 +546,139 @@
                     </ul>
                 <br>
                 <li><span class="atribute">novalidate</span> el &ltform&gt no se valida al entregarse.</li>
+                <p title='<form enctype="application/x-www-form-urlencoded" autocomplete="off" method="post" target="_blank" ction="https://mail.google.com/mail/u/0/?pli=1#inbox"></form>'><b><u>Ejemplo</u></b></p>
+                
             </ul>
         <br>
         <li>El elemento <span class="element">&ltinput&gt</span> tiene muchos atributos también:</li>
         <br>
             <ul>
-                <li><span class="atribute">name=""</span> define el nombre del &ltinput&gt, representa su valor al momento de la entrega.</li>
+                <li><span class="atribute">name=""</span> define el nombre del &ltinput&gt, vincula info. de JavaScript o su propia data al &ltform&gt al momento de entregarlo.</li>
                 <br>
-                <li><span class="atribute">value=""</span> define el valor del &ltinput&gt.</li>
+                <li><span class="atribute">value=""</span> define el valor del &ltinput&gt, este va cambiando según su tipo.</li>
                 <br>
                 <li><span class="atribute">requiered</span> especifica que el &ltinput&gt debe ser completado antes de entregarse.</li>
                 <br>
-                <li></li>
+                <li><span class="atribute">autofocus</span> especifica el &ltinput&gt en el que la página se va a enfocar al cargar la página.</li>
+                <br>
+                <li><span class="atribute">placeholder=""</span> especifica el texto dentro del &ltinput&gt que describe la info. esperada, cuando el usuario inserta algo en él, el texto desaparece.</li>
+                <br>
+                <li><span class="atribute">disabled</span> deshabilita un &ltinput&gt y le imposibilita al usuario interactuar con él.</li>
+                <br>
+                <li><span class="atribute">size=""</span> controla el tamaño del campo del &ltinput&gt y sus carácteres.</li>
+                <br>
+                <li><span class="atribute">form="fcontrol"</span> hace posible que un &ltinput&gt se insertado fuera del &ltform&gt y de cualquier manera ser enviado por él.</li>
             </ul>
         <br>
+        <h2 id="CSS en HTML"><u>CSS en HTML.</u></h2>
+        <li>Una vez que tenemos la estructura HTML, usamos CSS(Cascading Stylesheet).</li>
+        <br>
+        <li>CSS provee varios estilos y propiedades para aplicarlos, tienen un nombre y un valor, y cada uno se separa con (;).</li>
+        <br>
+        <li>Hay varios métodos para aplicar CSS:</li>
+        <br>
+            <ul>
+                <li><b>Inline CSS:</b> define propiedades CSS usando el atributo <span class="atribute">style=""</span> en el elemento HTML que corresponda.</li>
+                <br>
+                <code>&lth2 style='color: red; text-align: center;'&gt&lt/h2&gt</code>
+                <br><br>
+                <li><b>CSS Interno:</b> define todas las propiedades de CSS juntas con <span class="element">&ltstyle&gt</span> en la sección del <span class="element">&lthead&gt</span>.</li>
+                <br>
+                <code>
+                    &lthead&gtbr <br>
+                    &ltstyle&gt <br>
+                      text{<br>
+                        color: red;<br>
+                      } <br>
+                    &lt/style&gt <br>
+                    &lt/head&gt <br>
+                </code>
+                <br>
+                <li><b>CSS Externo:</b> define todas las propiedades CSS en un archico <b>.css</b> aparte y después conectándolo con el HTML en el &lthead&gt usando <span class="element">&ltlink&gt</span>.</li>
+            </ul>
+        <br>
+        <li>Algunas de las propiedades más usadas de CSS son:</li>
+        <br>
+            <ul>
+                <li><span class="property">background-color:</span> define el color del ondo del elemento.</li>
+                <br>
+                <li><span class="property">color:</span> define el color del texto del elemento.</li>
+                <br>
+                <li><span class="property">padding:</span> define el tamaño del relleno de un elemento.</li>
+                <br>
+                <li><span class="property">margin:</span> define el espacio que hay entre el elemento y el resto de los componentes y el marco de la página.</li>
+                <br>
+                <li><span class="property">border:</span> define el ancho y el color del borde del elemento.</li>
+                <br>
+                <li><span class="property">font-family:</span> define el tipo de fuente de las letras de un elemento.</li>
+                <br>
+                <li><span class="property">font-size:</span> define el tamaño de letra de un elemento.</li>
+                <br>
+                <li><span class="property">text-align:</span> define la alineación horizontal del texto de un elemento.</li>
+            </ul>
+        <br>
+        <li>HTML tiene un atributo llamado <span class="atribute">class=""</span>, se puede usar para dar función en JavaScript y CSS, podes usar la clase de HTML para darle estilos con &ltstyle&gt representándola con un punto (<span class="atribute">.</span>), y podes poner la misma clase en más de un elemento para que su estilo sea el mismo.</li>
+        <br>
+        <li>Cada elemento puede tener más de una clase siempre y cuando estén separadas por un espacio, y diferentes elementos pueden tener la misma clase.</li>
+        <br>
+        <code>
+            &ltstyle&gt <br>
+            .headings { <br>
+                color: red; <br>
+            } <br>
+            &lt/style&gt <br>
+        </code>
+        <br>
+        <br>
+        <li>Hay otro atrbituo de HTML llamado <span class="atribute">id=""</span>, sus funciones son básicamente las mismas que las de <span class="atribute">class=""</span>, excepto que los <span class="atribute">id=""</span> son únicos y no pueden repetirse.</li>
+        <br>
+        <li>A diferencia del <span class="atribute">class=""</span>, los <span class="atribute">id=""</span> se representan con un <span class="atribute">#</span>.</li>
+        <br>
+        <code>
+            &lthead&gt <br>
+            &ltstyle&gt <br>
+              #text{<br>
+                color: red;<br>
+              } <br>
+            &lt/style&gt <br>
+            &lt/head&gt <br>
+        </code>
+        <br>
+        <h2 id="Página Web dentro de HTML"><u>Página Web dentro de HTML.</u></h2>
+        <li><span class="element">&ltiframe&gt</span> se usa para desplegar una página web anidada dentro del documento.</li>
+        <br>
+            <ul>
+                <li><span class="atribute">src=""</span> contiene el URL de la página.</li>
+                <br>
+                <li><span class="atribute">width=""</span> y <span class="atribute">height=""</span> especifican el alto y el ancho de la página insertada, en <b>px</b> o <b>%</b>.</li>
+                <br>
+                <li><span class="atribute">border: none;</span> remueve el borde predeterminado de la ventana web.</li>
+                <br>
+                <li><span class="atribute">target=""</span>nos ayuda a conectar un <span class="element">&lta&gt</span> con la ventana del <span class="element">&ltiframe&gt</span> mediante el uso de los atributos <span class="atribute">name=""</span> para el &ltiframe&gt y el <span class="atribute">target=""</span> para el &lta&gt, y ambos deben ser iguales.</li>
+            </ul>
+        <br>
+        <li>También puedes usar todos los códigos de arriba para vincular un video de YouTube en el &ltiframe&gt.</li>
+        <br>
+        <li>Algunos atributos de <span class="element">&ltiframe&gt</span> son:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">allowfullscreen=""</span> permite que la ventana del <span class="element">&ltiframe&gt</span> se expanda en toda la pantalla.</li>
+                <br>
+                <li><span class="atribute">height=""</span> y <span class="element">width=""</span> definen el alto y el ancho de la ventana.</li>
+                <br>
+                <li><span class="atribute">name=""</span> define el nombre del <span class="element">&ltiframe&gt</span>, y puede ser usado para vincularlo con JavaScript, &lta&gt, &ltform&gt, &ltinput&gt, &ltbutton&gt.</li>
+                <br>
+                <li><span class="atribute">src=""</span> contiene el URL de la página.</li>
+            </ul>
+        <br>
+        <h2 id="JavaScript en HTML"><u>JavaScript en HTML.</u></h2>
+        <li><span class="element">&ltscript&gt</span> se encarga de encerrar una sección en HTML en la que podés escribir funciones de script, principalmente <b>JavaScript</b>.</li>
+        <br>
+        <li><span class="element">&ltscript&gt</span> puede ser ingresada en <span class="element">&lthead&gt</span> o en <span class="element">&ltbody&gt</span>.</li>
+        <br>
+        <li>Para seleccionar un elemento de HTML, JavaScript usa <span class="javascript">document.getElementById()</span> para seleccionar el elemento por su <span class="atribute">id=""</span>.</li>
+        <br>
+        <li></li>
     </ul>
 </body>
 </html>
