@@ -3,7 +3,7 @@
 }
 
 .atribute{
-    color: red
+    color: rgb(255, 0, 0)
 }
 
 .property{
@@ -48,3 +48,9 @@ table{
 #conjunto{
     width: 300px;
 }
+
+body{
+    background-color: black;
+    color: yellow;
+}
+

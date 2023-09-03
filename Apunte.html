@@ -28,6 +28,26 @@
             <li><a href="#Página Web dentro de HTML">Página Web dentro de HTML.</a></li>
             <br>
             <li><a href="#JavaScript en HTML">JavaScript en HTML.</a></li>
+            <br>
+            <li><a href="#Comentarios de HTML">Comentarios de HTML.</a></li>
+            <br>
+            <li><a href="#Direcciones de carpeta de HTML">Direcciones de carpeta de HTML.</a></li>
+            <br>
+            <li><a href="#Head de HTML">Head de HTML.</a></li>
+            <br>
+            <li><a href="#Diseños HTML">Diseños HTML.</a></li>
+            <br>
+            <li><a href="#HTML sensible">HTML sensible.</a></li>
+            <br>
+            <li><a href="#Código de computadora para HTML">Código de computadora para HTML.</a></li>
+            <br>
+            <li><a href="#Entidades de HTML">Entidades de HTML.</a></li>
+            <br>
+            <li><a href="#Símbolos de HTML">Símbolos de HTML.</a></li>
+            <br>
+            <li><a href="#Conjunto de carácteres de HTML">Conjunto de carácteres de HTML.</a></li>
+            <br>
+            <li><a href="#Codificación URL de HTML">Codificación URL de HTML.</a></li>
         </ul>
         
     </div>
@@ -678,7 +698,396 @@
         <br>
         <li>Para seleccionar un elemento de HTML, JavaScript usa <span class="javascript">document.getElementById()</span> para seleccionar el elemento por su <span class="atribute">id=""</span>.</li>
         <br>
-        <li></li>
+        <li>JavaScript actúa principalmente en los <b>eventos</b>, estos son básicamente acciones del usuario o de la página en sí, como un click del mouse o la carga de un página. HTML provee atributos para trabajar con JavaScript y realizar cierta acción.</li>
+        <br>
+        <li>Hay varios tipos de eventos:</li>
+        <br>
+            <ul>
+                <li><b>Form events:</b> reset, submit, etc.</li>
+                <br>
+                <li><b>Select events:</b> text field, text area, etc.</li>
+                <br>
+                <li><b>Focus events:</b> focus, blur, etc.</li>
+                <br>
+                <li><b>Mouse events:</b> select, mouseup, mousedown, mousemove, click, dbclick, etc.</li>
+            </ul>
+        <br>
+        <li>Algunos atributos de ventos son:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">onClick=""</span> cuando el usuario hace click en un elemento de &ltform&gt o un link.</li>
+                <br>
+                <li><span class="atribute">onSubmit=""</span> cuando el usuario entrega un &ltform&gt al servidor.</li>
+                <br>
+                <li><span class="atribute">onLoad=""</span> cuando una página se carga en el buscador.</li>
+                <br>
+                <li><span class="atribute">onFocus=""</span> cuando el usuario se enfoca en un campo &ltinput&gt.</li>
+                <br>
+                <li><span class="atribute">onSelect=""</span> cuando el usuario selecciona el campo &ltinput&gt de un &ltform&gt.</li>
+            </ul>
+        <br>
+        <li>Podes cambiar el contenido de un elemento HTML de la siguiente manera:</li>
+        <br>
+            <ul>
+                <li><span class="javascript">document.getElementById("id").innerHTML = "Hello World!";</span>.</li>
+            </ul>
+        <br>
+        <li>Podes cambiar el estilo de un elemento HTML de la siguiente manera:</li>
+        <br>
+            <ul>
+                <li><span class="javascript">document.getElementById("id").style.color = "red";</span></li>
+            </ul>
+        <br>
+        <li>Podes cambiar el atributo de un elemento HTML de la siguiente manera:</li>
+        <br>
+            <ul>
+                <li><span class="javascript">document.getElementById("id").src = "pic.png"</span></li>
+            </ul>
+        <br>
+        <li>Al tener muchos archivos HTML que necesiten tener un <span class="element">&ltscript&gt</span>, podes poner todos los &ltscript&gt en un solo archivo de JavaScript, y luego vincularlo con los HTML de la siguiente manera.</li>
+        <br>
+            <ul>
+                <li><span class="element">&ltscript&gt</span> <span class="atribute">type="text/javascript"   scr="./script.js"</span><span class="element">&lt/script&gt</span>.</li>
+            </ul>
+        <br>
+        <li><span class="element">&ltnoscript&gt</span> se usa para escribir &ltscript&gt deshabilitado, su contenido no aparece en el navegador.</li>
+        <br>
+        <h2 id="Comentarios de HTML"><u>Comentarios de HTML.</u></h2>
+        <li>Los comentarios son texto escrito en tu código para dar explicaciones de él.</li>
+        <br>
+        <li>Todo lo que se escriba en ellos será ignorado por el navegador, así que no seran visibles para nadie a menos que veas el código directamente.</li>
+        <br>
+        <li>Para añadir un comentario en HTML, se usa <span class="element">&lt!-- --&gt</span>.</li>
+        <br>
+        <h2 id="Direcciones de carpeta de HTML"><u>Direcciones de carpeta de HTML.</u></h2>
+        <li>Una ruta de archivo HTML describe la localización de un archivo en una carpeta web.</li>
+        <br>
+        <li>Las rutas de archivo son como una dirección de un archivo para un navegador web.</li>
+        <br>
+        <li>Podemos usar estas rutas para vincular con HTML algunas fuentes externas para darle más dinámica, como imagenes, archivos CSS, archivos JavaScript, etc.</li>
+        <br>
+        <li>Los diferentes tipos de maneras de especificar rutas de archivos son con los atributos <span class="atribute">src=""</span> y <span class="atribute">href=""</span>, de la siguiente manera:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">src="picture.jpg"</span> especifica que la imagen está en la misma carpeta de la misma página.</li>
+                <br>
+                <li><span class="atribute">src="images/picture.jpg"</span> especifica que la imagen está ubicada en la carpeta images dentro de tu carpeta actual.</li>
+                <br>
+                <li><span class="atribute">src="/images/picture.jpg"</span> especifica que la imagen está en la carpeta images en las raíces de la página actual.</li>
+                <br>
+                <li><span class="atribute">src="../picture.jpg"</span> especifica que la imagen está ubicada en la carpeta un nivel más arriba que la actual.</li>
+            </ul>
+        <br>
+        <li>Estas rutas se pueden usar para vincular:</li>
+        <br>
+            <ul>
+                <li><b>Página Web.</b></li>
+                <br>
+                <li><b>Imágenes.</b></li>
+                <br>
+                <li><b>Hojas de estilo.</b></li>
+                <br>
+                <li><b>JavaScript.</b></li>
+            </ul>
+        <br>
+        <li>Hay dos tipos de rutas:</li>
+            <dl>
+                <dt><b>Rutas de archivo absolutas:</b></dt>
+                <dd>Rutas absolutas especifican la dirección URL completa.</dd>
+                <br>
+                <dt><b>Rutas de archivo relativas:</b></dt>
+                <dd>Rutas relativas especifican una carpeta relacionada con la página actual.</dd>
+            </dl>
+        <br>
+        <h2 id="Head de HTML"><u>Head de HTML.</u></h2>
+        <li>El elemento <span class="element">&lthead&gt</span> contiene metadata, data que modifica otra data, como links, títulos, estilos, y otra información meta.</li>
+        <br>
+        <li>Se inserta entre <span class="element">&lthtml&gt</span> y <span class="element">&ltbody&gt</span>.</li>
+        <br>
+        <li>Su contenido no se muestra en el navegador. Su contenido solo modifica la data que si se muestra.</li>
+        <br>
+        <li>Algunas etiquetas usadas en <span class="element">&lthead&gt</span>:</li>
+        <br>
+            <ul>
+                <li><span class="element">&lttitle&gt</span>: <br>
+                    Este elemento se usa para definir el título del documento. Su titulo se muestra en la barra de búsqueda del navegador al acceder a la página. Este título se usa para buscar la página desde cualquier navegador desde cualquier dispositivo.
+                </li>
+                <br>
+                <li>
+                    <span class="element">&ltstyle&gt</span>: <br>
+                    Este elemeto se usa para darle estilo y apariencia a la página de HTML. Puede contener propiedades <b>CSS</b> para esa página únicamente, para aplicarla a muchas páginas a la vez, se insertan en un archivo de '.css' aparte.
+                </li>
+                <br>
+                <li>
+                    <span class="element">&ltmeta&gt</span>: <br>
+                    Este elemento se usa para especificar la descripción de la página, palabras clave, autores, y otra metadata de la página. Metadata es usada por navegadores para nivelar mejor las páginas web. <br>
+                    <span class="atribute">charset=""</span> especifica la codificación de los carácteres, usualmente se usa <b>UTF-8</b> como su valor, indicando que puede imprimir cualquier lenguaje. <br>
+                    <span class="atribute">name="description"</span> se usa para mejorar la búsqueda de la página, mencionando una descrioción de su contenido, para eso usamos también <span class="atribute">content=""</span>. <br>
+                    <span class="atribute">name="keywords"</span> es un valor que se usa para proveer palabras claves para un buscador, se usa también con <span class="atribute">content=""</span>. <br>
+                    <span class="atribute">name="author"</span> este valor especifica el nombre de la persona que escribió el contenido de la página, es útil para obtener información del autor rápidamente, tambien se usa <span class="atribute">content=""</span> en él. <br>
+                    <span class="atribute">http-equiv="refresh"</span> se usa para establecer un lapso en el que la página se reinicia cuando se cumple, el temporizador se establece en segundos, con el atributo <span class="atribute">content=""</span>, además, si añadis un URL delante del temporizador con un ";", se irá a esa página en su lugar. <br>
+                    En HTML5, <span class="element">&ltmeta&gt</span> también se puede usar para controlar el <b>Viewport</b>, se refiere a la parte del documento que usted está viendo, la cual es actualmente visible en su ventana, que según el dispositivo que uses puede ir cambiando dependiendo de su tamaño. Para setearlo usamos el atributo <span class="atribute">name="viewport"</span>, luego usamos <span class="atribute">content="width=device-width, initial-scale=1.0"</span>, <b>width=device-width</b> se usa para colocar el ancho de la página al ancho del dispositivo. <b>initial-scale=1.0</b> se usa para colocar el zoom inicial de la página al ser abierta.  
+                </li>
+                <br>
+                <li>
+                    <span class="element">&ltlink&gt</span>: <br>
+                    Este elemento se usa para vincular una hoja de estilos a tu página web. Contiene 2 atributos: <br>
+                    <span class="atribute">href=""</span> contiene la ruta del archivo, su ubicación. <br>
+                    <span class="atribute">rel=""</span> este indica que el archivo es un <b>stylesheet</b>.
+                </li>
+                <br>
+                <li>
+                    <span class="element">&ltscript&gt</span>: <br>
+                    Este elemento se usa para aplicar código JavaScript en esa misma página o para vincular un archvio JavaScript aparte con la página usando <span class="atribute">src=""</span>.
+                </li>
+                <br>
+                <li>
+                    <span class="element">&ltbase&gt</span>: <br>
+                    Este elemento se usa para especificar el URL base y objetivo para todos los URL del resto de la página, con el atributo <span class="atribute">href=""</span>.
+                </li>
+            </ul>
+        <br>
+        <h2 id="Diseños HTML"><u>Diseños HTML.</u></h2>
+        <li>Estos diseños le proveen a un página HTML una buena estructura para su presentación, ordenada, lógica, prolija; especifican su organización visual.</li>
+        <br>
+        <li>Es muy importante tener esto en cuenta mientras se arma la página, de lo contrario existe la posibilidad de organizarla y rehacerla toda de cero.</li>
+        <br>
+        <li>También puedes usar estructuras de CSS y JavaScript para alterar el diseño de la página HTML.</li>
+        <br>
+        <li>Algunos elementos de HTML5 que definen diferentes partes de la página son:</li>
+        <br>
+            <ul>
+                <li><span class="element">&ltheader&gt</span> define el header de una sección o de un documento, o sea la parte superior. Contiene el contenido introductorio, el elemento heading, el ícono de la página, información del autor.</li>
+                <br>
+                <li><span class="element">&ltnav&gt</span> define el contenedor para links de navegación, contiene links para la misma página, o para otras páginas.</li>
+                <br>
+                <li><span class="element">&ltsection&gt</span> define una sección separada del documento que contiene elementos relacionados entre sí, como texto, imágenes, tablas, videos, etc.</li>
+                <br>
+                <li><span class="element">&ltarticle&gt</span> define un artículo independiente, como un artículo.</li>
+                <br>
+                <li><span class="element">&ltaside&gt</span> define contenido aparte del resto, debe estar relacionado con el contenido principal, como una barra lateral.</li>
+                <br>
+                <li><span class="element">&ltfooter&gt</span> define un footer de un documento o página web, o sea la parte inferior, usualmente contiene fuentes, información del autor, derechos, etc.</li>
+                <br>
+                <li><span class="element">&ltdetails&gt</span> define detalles adicionales sobre la página web, puede ocultarlos o mostrarlos según se necesite.</li>
+                <br>
+                <li><span class="element">&ltsummary&gt</span> define un heading para la etiqueta <b>&ltdetails&gt</b>.</li>
+            </ul>
+        <br>
+        <li>Estas son algunas técnicas y estructuras simples para mejorar el diseño de la página:</li>
+        <br>
+            <ul>
+                <li><b>Tablas HTML:</b><br>
+                    Este diseño no se recomienda, aunque, es fácil de usar porque usa filas y columnas. Es fácil de hacer, pero modificarlo y pensanalizarlo es muy difícil.
+                </li>
+                <br>
+                <li><b>Propiedad float de CSS.</b><br>
+                    Puede usarse para diseñar la página completa. Tiene ventajas y desventajas: <br>
+                    - Ventajas: es fácil de aprender y de usar. <br>
+                    - Desventajas: algunos elementos están atados al documento, lo que perjudica la flexibilidad.
+                </li>
+                <br>
+                <li><b>Marcos CSS.</b><br>
+                    CSS provee muchas marcos, como W3.CSS, Bootstrap, y muchos más. Puedes crear una página atractiva con ellos, les añadis un link y podes usar todas las propiedades de ese marco. 
+                </li>
+                <br>
+                <li><b>Diseño de caja flexible CSS.</b><br>
+                    Este marco se hizo en CSS3, se asegura de que la página se acomode a los distintos tipos de dispositivos y tamaños de pantalla, sin embargo, no funciona en IE10 o en algo más viejo.
+                </li>
+                <br>
+                <li><b>Diseño usando div.</b><br>
+                    Marcas distinas partes de la página con elementos <span class="element">&ltdiv&gt</span> para darles estilos distintos a cada parte.
+                </li>
+            </ul>
+        <br>
+        <h2 id="HTML sensible"><u>HTML sensible.</u></h2>
+        <li>El diseño sensible de páginas web se usa para hacer que la página sea más apropiada y bien puesta en todos los dispositivos. Hace que el contenido sea vea bien en cualquier pantalla dándole un buen uso a su HTML y CSS.</li>
+        <br>
+        <li>Puedes aumentar el tamaño de una imagen proporcionalmente usando el atributo <span class="atribute">width=""</span> con cualquier porcentaje.</li>
+        <br>
+        <li>La propiedad de CSS <span class="atribute">max-width=""</span> se usa mucho para que la imagen se haga más pequeña si se necesita, pero nunca más grande que su tamaño original.</li>
+        <br>
+        <li>El elemento <span class="element">&ltpicture&gt</span> puede setear una o más imagenes para que su tamaño cambie al cambiar el tamaño del navegador o de donde sea que estés viendo la imagen.</li>
+        <br>
+        <li>Puedes hacer sensible al tamaño del texto usando la unidad <b>vw</b>, significa, viewport-width, al usarlo podemos hacer que el tamaño del texto corresponde con el tamaño de la ventana del navegador.</li>
+        <br>
+        <h2 id="Código de computadora para HTML"><u>Código de computadora para HTML.</u></h2>
+        <li>Al estar programando uno a veces necesita mostrar código de la computadora, programas, mensajes de error o cosas así en la página. Para eso usamos varias etiquetas que se usan para contener estos mismos tipos de contenidos.</li>
+        <br>
+            <ul>
+                <li><span class="element">&ltcode&gt</span>: <br>
+                    Es usada para representar código de programación en tu sitio web, su contenido se mostrará con cada letra ocupando el mismo espacio.
+                </li>
+                <br>
+                <li><span class="element">&ltkbd&gt</span>: <br>
+                    Se usa para representar interacciones del usuario al usar el teclado, un mensaje de voz, o algo que incluya al usuario interactuando directamente con la máquina. 
+                </li>
+                <br>
+                <li><span class="element">&ltsamp&gt</span>: <br>
+                    Este elemento se usa para el output de un programa, lo que produce como resultado.
+                </li>
+                <br>
+                <li><span class="element">&ltvar&gt</span>: <br>
+                    Este elemento define una variable, puede ser matemática, o de programación.
+                </li>
+                <br>
+                <li><span class="element">&ltpre&gt</span>: <br>
+                    Este elemento define texto preformateado, lo que muestra el texto tal y como se pone en el código, ignorando el formateo automático.
+                </li>
+            </ul>
+        <br>
+        <h2 id="Entidades de HTML"><u>Entidades de HTML.</u></h2>
+        <li>Son usadas como reemplazo para carácteres reservados por HTML.</li>
+        <br>
+        <li>Estas entidades proveen un amplio rango de carácteres que te permiten añadir íconos, formas geométricas, operadores matemáticos, etc.</li>
+        <br>
+        <li>En un texto en HTML si usas (&lt) o (&gt), el texto lo toma como etiqueta, ahí entran las entidades.</li>
+        <br>
+        <li>Cada entidad comienza con un (<b>&</b>) y termina con (<b>;</b>).</li>
+        <br>
+        <li>Algunas de las entidades de carácteres más usadas son:</li>
+        <br>
+            <ul>
+                <li><b>&ampnbsp</b>: non-breaking space, pone un espacio en blanco(&nbsp).</li>
+                <br>
+                <li><b>&amplt</b>: less than, señala que elemento anterior es menor que el siguiente(&lt).</li>
+                <br>
+                <li><b>&ampgt</b>: greater than, señala que elemento anterior es mayor que el siguiente(&gt).</li>
+                <br>
+                <li><b>&ampamp</b>: amperstand, inserta el símbolo &.</li>
+                <br>
+                <li><b>&ampquot</b>: double quotation mark, inserta comillas dobles( &quot ).</li>
+                <br>
+                <li><b>&ampapos</b>: single quotation mark(apostrophe), inserta una comilla simple( ' ).</li>
+                <br>
+                <li><b>&ampcent</b>: cent, inserta el símbolo de los centavos(&cent).</li>
+                <br>
+                <li><b>&amppound</b>: pound, inserta el símbolo de la libra(&pound).</li>
+                <br>
+                <li><b>&ampyen</b>: yen, inserta el símbolo de los yen(&yen).</li>
+                <br>
+                <li><b>&ampeuro</b>: euro, inserta el símbolo de los euros(&euro;).</li>
+                <br>
+                <li><b>&ampcopy</b>: copyright, inserta el símbolo del copyright(&copy).</li>
+                <br>
+                <li><b>&ampreg</b>: registered trademark, inserta una marca de registración(&reg).</li>
+            </ul>
+        <br>
+        <li>Hay algunas letras especiales en HTML con que tienen glifos, signos añadidos arriba o abajo de la letra, se llaman <b>marcas diacríticas</b>. <br>
+            Algunas marcas diacríticas son ( ` ) o ( ´ ),llamados acentos, pueden usarse de varias maneras en las letras. 
+        </li>
+        <br>
+        <li>Algunas marcas diacriticas son:</li>
+        <br>
+            <ul>
+                <li><b>a&amp#768</b> imprime a&#768.</li>
+                <br>
+                <li><b>a&amp#769</b> imprime a&#769</li>
+                <br>
+                <li><b>a&amp#770</b> imprime a&#770</li>
+                <br>
+                <li><b>a&amp#771</b> imprime a&#771</li>
+            </ul>
+        <br>
+        <li>Al cambiar la letra inicial, la marca diacrítica aplica para esa letra.</li>
+        <br>
+        <h2 id="Símbolos de HTML"><u>Símbolos de HTML.</u></h2>
+        <li>Hay muchos símbolos matemáticos, técnicos, y otros tipos que no aparecen en el teclado, así que hay que representarlos con nombres de entidad para añadirlos a la página.</li>
+        <br>
+        <li>Si no hay un nombre de entidad para lo quieras representar, puedes usar un número de entidad, un decimal o un hexadecimal de referencia.</li>
+        <br>
+        <li>Los símbolos matemáticos de HTML son: <br> </li>
+        <br>
+            <ul>
+                <li>&#8704 : for all, representado por &amp#8704, o por &forall.</li>
+                <br>
+                <li>&#8706 : partial difference, representado por &amp#8706 o por &part.</li>
+                <br>
+                <li>&#8707 : there exists, representado por &amp#8707, o por &exist.</li>
+                <br>
+                <li>&#8709 : empty set, representado por &amp#8709, o por &empty.</li>
+                <br>
+                <li>&#8711 : nabla, representado por &amp#8711, o por &nabla.</li>
+                <br>
+                <li>&#8712 : element of, representado por &amp#8712, o por &isin.</li>
+                <br>
+                <li>&#8713 : not an element, representado por &amp#8713, o por &ampnotin.</li>
+                <br>
+                <li>&#8715 : contains as member, representado por &amp#8715, o por &ni.</li>
+                <br>
+                <li>&#8719 : n-ary product(product sign), representado por &amp#8719, o por &prod.</li>
+                <br>
+                <li>&#8721 : n-ary summation, representado por &amp#8721, o por &sum.</li>
+            </ul>
+        <br>
+        <li>Los símbolos griegos de HTML son:</li>    
+        <br>
+            <ul>
+                <li>&#913 : greek capital letter alpha, representado por &amp#913, o por &Alpha.</li>
+                <br>
+                <li>&#914 : greek capital letter beta, representado por &amp#914, o por &Beta.</li>
+                <br>
+                <li>&#915 : greek capital letter gamma, representado por &amp#915, o por &Gamma.</li>
+                <br>
+                <li>&#916 : greek capital letter delta, representado por &amp#916, o por &Delta.</li>
+                <br>
+                <li>&#917 : greek capital letter epsilon, representado por &amp#917, o por &Epsilon.</li>
+                <br>
+                <li>&#918 : greek capital letter zeta, representado por &amp#918, o por &Zeta.</li>
+            </ul>
+        <br>
+        <li>Algunos símbolos importantes de HTML son:</li>
+        <br>
+            <ul>
+                <li>&#169 : copyright sign, representado por &amp#169, o por &ampcopy.</li>
+                <br>
+                <li>&#174 : registration sign, representado por &amp#174, o por &ampreg.</li>
+                <br>
+                <li>&#8364 : euro sign, representado por &amp#8364, o por &ampeuro.</li>
+                <br>
+                <li>&#8482 : trademark, representado por &amp#8482, o por &amptrade.</li>
+                <br>
+                <li>&#8592 : leftway arrow, representado por &amp#8592, o por &amplarr.</li>
+                <br>
+                <li>&#8593 : upway arrow, representado por &amp#8593, o por &ampuarr.</li>
+                <br>
+                <li>&#8594 : rightway arrow, representado por &amp#8594, o por &amprarr.</li>
+                <br>
+                <li>&#8595 : downway arrow, representado por &amp#8595, o por &ampdarr.</li>
+                <br>
+                <li>&#9824 : black spade suit, representado por &amp#9824, o por &ampspades.</li>
+                <br>
+                <li>&#9827 : black club suit, representado por &amp#9827, o por &ampclubs.</li>
+                <br>
+                <li>&#9829 : black heart suit, representado por &amp#9829, o por &amphearts.</li>
+                <br>
+                <li>&#9830 : black diamond suit, representado por &amp#9830, o por &ampdiams.</li>
+            </ul>
+        <br>
+        <h2 id="Conjunto de carácteres de HTML"><u>Conjunto de carácteres de HTML.</u></h2>
+        <li>También llamado HTML Enconding, despliega una página HTML correctamente, al desplegarla uno debe tener en cuenta que carácter de codificación.</li>
+        <br>
+        <li>Los tipos de codificación de carácteres son:</li>
+        <br>
+            <ul>
+                <li><b>Set de carácteres ASCII:</b><br>
+                    Significa Amercian Standard Code for Information Interchange. Provee 128 carácteres alfanuméricos diferentes para usarlos en el Internet, o sea; números del 0-9, letras de inglés de la a-z, y algunos carácteres especiales como($, +, -, (), @, &lt &gt). Su límite de carácteres era su mayor problema.
+                </li>
+                <br>
+                <li><b>Set de carácteres ANSI:</b><br>
+                    Significa American National Standard Institute. Es una versión extendida de ASCII con 256 carácteres.
+                </li>
+                <br>
+                <li><b>Set de carácteres ISO-8859-1:</b><br>
+                    Era el set de carácteres por defecto de HTML 2.0, era una extensión de ASCII con carácteres internacionales, usaba bytes completos para mostrar los carácteres.
+                </li>
+                <br>
+                <li><b>Set de carácteres UTF-8:</b><br>
+                    Tiene una gran extensión de carácteres que abarcan casi todos los carácteres del mundo. Es el set de carácteres por defecto de HTML 4, y HTML 5, todo debido a su variedad de carácteres. 
+                </li>
+            </ul>
+        <br>
+        <h2 id="Codificación URL de HTML"><u>Codificación URL de HTML.</u></h2>
     </ul>
 </body>
 </html>
