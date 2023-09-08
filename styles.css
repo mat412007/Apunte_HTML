@@ -52,5 +52,10 @@ table{
 body{
     background-color: black;
     color: yellow;
+    font-size: 17px;
+}
+
+#Indice{
+    font-size: 18px;
 }
 

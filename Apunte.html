@@ -10,7 +10,7 @@
     <h1><u>Información y etiquetas de HTML.</u></h1>
     <h2><u>Índice.</u></h2>
     <div>
-        <ul>
+        <ul id="Indice">
             <li><a href="#Información general de HTML">Información general de HTML</a></li>
             <br>
             <li><a href="#Un hipervínculo en HTML">Un hipervínculo en HTML</a></li>
@@ -48,6 +48,10 @@
             <li><a href="#Conjunto de carácteres de HTML">Conjunto de carácteres de HTML.</a></li>
             <br>
             <li><a href="#Codificación URL de HTML">Codificación URL de HTML.</a></li>
+            <br>
+            <li><a href="#Atributos globales de HTML">Atributos globales de HTML.</a></li>
+            <br>
+            <li><a href="#Atributos eventuales de HTML">Atributos eventuales de HTML.</a></li>
         </ul>
         
     </div>
@@ -1088,6 +1092,165 @@
             </ul>
         <br>
         <h2 id="Codificación URL de HTML"><u>Codificación URL de HTML.</u></h2>
+        <li>URL significa Uniform Resource Locator, básicmente es una dirección web.</li>
+        <br>
+        <li>Contiene una dirección IP, Internet Protocol, como i.e.195.201.68.81. Sin embargo, es más fácil recordar una dirección URL con palabras más que con números.</li>
+        <br>
+        <li>Sintaxis de un URL: </li>
+        <br>
+            scheme://prefix.domain:port/path/filename <br>
+            <br>
+            <ul>
+                <li><b>scheme</b> se usa para definir el tipo de servicio de Internet, usualmente http o https.</li>
+                <br>
+                <li><b>prefix</b> se usa para definir el dominio del dominio que queremos seleccionar, el prefijo, o sea "www".</li>
+                <br>
+                <li><b>domain</b> se usa para definir el nombre del dominio de Internet, como javaTpoint.com.</li>
+                <br>
+                <li><b>port</b> se usa para definir el número de puerto en el anfitrión, por defecto es 80.</li>
+                <br>
+                <li><b>path</b> se usa para definir el camino en el servidor.</li>
+                <br>
+                <li><b>filename</b> se usa para definir el nombre del documento o de una fuente.</li>
+            </ul>
+        <br>
+        <li>Una lista de los esquemas(schemes) más comunes usados en URL son:</li>
+        <br>
+            <ul>
+                <li><b>http:</b> (HyperText Transfer Protocol), páginas web comúnes, no protegidas.</li>
+                <br>
+                <li><b>https:</b> (Secure HyperText Transfer Protocol), páginas web seguras, protegidas.</li>
+                <br>
+                <li><b>ftp:</b> (File Transfer Protocol), subiendo o bajando archivos.</li>
+            </ul>
+        <br>
+        <li>Codificación URL se usa para convertir carácteres que no son de ASCII a un formato que puede ser usado en el Internet, esto se debe a que un URL es enviado por Internet usando únicamente el set de carácteres ASCII, si contiene carácteres que no son ASCII, deben ser convertidos.</li>
+        <br>
+        <li>En la codificación de URL, los carácteres que no son de ASCII son reemplazados por "%" y un número hexadecimal adelante.</li>
+        <br>
+        <li>La codificación URL reemplaza espacios con "+" o con "%20".</li>
+        <br>
+        <h2 id="Atributos globales de HTML"><u>Atributos globales de HTML.</u></h2>
+        <li>Los atributos globales son aquellos que aplican para todos los elementos de HTML.</li>
+        <br>
+        <li>Aunque estos atributos aplican para todos los elementos, no tienen el mismo efecto en todos en ellos.</li>
+        <br>
+        <li>Los atributos globales son:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">accesskey=""</span>, su valor es un carácter que genera un atajo de teclado para el elemento actual.</li>
+                <br>
+                <li><span class="atribute">class=""</span>, su valor es el nombre de la clase a la que pertenece, muchos elementos pueden compartir una clase, para luego usarla para darle estilo o funcionalidad.</li>
+                <br>
+                <li><span class="atribute">contenteditable=""</span>, su valor puede ser true o false, su función es indicar si el elemento debe ser editado por el usuario.</li>
+                <br>
+                <li><span class="atribute">contextmenu=""</span>, su valor representa el <span class="atribute">id=""</span> de un elemento <span class="element">&ltmenu&gt</span>.</li>
+                <br>
+                <li><span class="atribute">data-*</span>, su valor puede irse modificando según lo que se necesite, permiten almacenar información adicional para usarla o editarla luego.</li>
+                <br>
+                <li><span class="atribute">dir=""</span>, su valor define la dirección en la que escribe el texto, sus valores pueden ser:</li>
+                <br>    
+                    <ul>
+                        <li><span class="atribute">dir="ltr"</span>, esto significa left to right, de izquierda a derecha.</li>
+                        <br>
+                        <li><span class="atribute">dir="rtl"</span>, esto significa right to left, de derecha a izquierda.</li>
+                        <br>
+                        <li><span class="atribute">dir="auto"</span>, esto significa que se ajusta según los carácteres que resiva.</li>
+                    </ul>
+                <br>
+                <li><span class="atribute">draggable=""</span>, su valor puede ser true, false, su función es indicar si el elemento puede ser arrastrado.</li>
+                <br>
+                <li><span class="atribute">dropzone=""</span>, especifica si la data es copiada, movida, o enlazada, para eso usamos los atribtuos: <span class="atribute">dropzone="copy"</span>, <span class="atribute">dropzone="move"</span>, y <span class="atribute">dropzone="link"</span>.</li>
+                <br>
+                <li><span class="atribute">hidden</span>, indica que el elemento es invisible en el navegador.</li>
+                <br>
+                <li><span class="atribute">id=""</span>, indica una clase única, estos atributos no pueden tener el mismo valor en más de un elemento.</li>
+                <br>
+                <li><span class="atribute">lang=""</span>, su valor especifica el lenguaje del contenido de un elemento.</li>
+                <br>
+                <li><span class="atribute">style=""</span>, un atributo que habilita el uso de propiedades de CSS dentro de un elemento, sin tener que especificarlo, o tener que abrir otro archivo de CSS.</li>
+                <br>
+                <li><span class="atribute">spellcheck=""</span>, su valor puede ser true o false, especifica si el elemento debe ser chequeado por errores de deletreado.</li>
+                <br>
+                <li><span class="atribute">tabindex=""</span>, su valor es un número, especifica los elementos que pueden enfocarse con la tecla <kbd>Tab</kbd> al estarla usando para recorrer una página, ya sea con la tecla o con el mouse.</li>
+                <br>
+                <li><span class="atribute">title=""</span>, contiene información que describe el elemento cuando el cursor del mouse está sobre él.</li>
+                <br>
+                <li><span class="atribute">translate=""</span>, indica con los valores yeso no si el contenido de un elemento debe ser traducido.</li>
+            </ul>
+        <br>
+        <h2 id="Atributos eventuales de HTML"><u>Atributos eventuales de HTML.</u></h2>
+        <li>Se llama evento cuando el usuario interactua con el navegador, como cuando se clickea un botón.</li>
+        <br>
+        <li>Varios de estos atributos eventuales son activados con lenguajes de programación como JavaScript.</li>
+        <br>
+        <li>Los atributos eventuales de Windows(la mayoría son de la etiqueta <span class="element">&ltbody&gt</span>) son:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">onafterprint=""</span>, especifica la función que tu quieras que se ejecute después de cargar la página.</li>
+                <br>
+                <li><span class="atribute">onbeforeprint=""</span>, especifica la función que tu quieras que se ejecute antes de cargar la página.</li>
+                <br>
+                <li><span class="atribute">onbeforeunload=""</span>, especifica un mensaje de confirmación si el usuario quiere o no dejar la página actual, puede ser por defecto, o creado por vos en JavaScript.</li>
+                <br>
+                <li><span class="atribute">onerror=""</span>, especifica el mensaje que aparece cuando hay un error al cargar un archivo externo, no importa el tipo de archivo que sea.</li>
+                <br>
+                <li><span class="atribute">onhashchange=""</span>, especifica qué función activar cuando hay un cambio en el URL actual.</li>
+                <br>
+                <li><span class="atribute">onload=""</span>, especifica qué hacer cuando la página se cargó por completo, todo su contenido debe haber sido cargado para que esto se active.</li>
+                <br>
+                <li><span class="atribute">onmessage=""</span>, especifica el mensaje que se desea ejecutar en cierto evento.</li>
+                <br>
+                <li><span class="atribute">onoffline=""</span>, especifica que mensaje ejecutar cuando el navegador empieza a trabajar offline.</li>
+                <br>
+                <li><span class="atribute">ononline=""</span>, especifica qué mensaje ejecutar cuando se comienza a trabajar online.</li>
+                <br>
+                <li><span class="atribute">onpagehide=""</span>, especifica qué hacer cuando el usuario navega a fuera de cierta página, cuando está oculta.</li>
+                <br>
+                <li><span class="atribute">onpageshow=""</span>, específica qué hacer cuando la página a penas se comienza a cargar.</li>
+                <br>
+                <li><span class="atribute">onpopstate=""</span>, especifica qué hacer cuando la historia de windows cambia.</li>
+                <br>
+                <li><span class="atribute">onresize=""</span>, especifíca que hacer cuando a la ventana del navegador se le cambia el tamaño.</li>
+                <br>
+                <li><span class="atribute">onstorage=""</span>, específica qué hacer cuando el contenido local de una página es actualizado.</li>
+                <br>
+                <li><span class="atribute">onunload=""</span>, especifíca que hacer cuando la página actual es cerrada.</li>
+            </ul>
+        <br>
+        <li>Los atributos eventuales de <span class="element">&ltform&gt</span> son los que ocurren cuando el usuario interactúa con el <span class="element">&ltform&gt</span>, como con un campo <span class="element">&ltinput&gt</span>.</li>
+        <br>
+        <li>Estos atributos pueden usarse para cualquier elemento, pero los de <span class="element">&ltform&gt</span> son los con los que más se usan.</li>
+        <br>
+        <li>Los atributos eventuales de <span class="element">&ltform&gt</span> son:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">onblur=""</span>, específica qué hacer cuando un elemento se sale de otro elemento.</li>
+                <br>
+                <li><span class="atribute">onchange=""</span>, especifíca qué hacer cuando el valor del elemento cambia.</li>
+                <br>
+                <li><span class="atribute">onfocus=""</span>, especifíca qué hacer cuando el elemento es enfocado.</li>
+                <br>
+                <li><span class="atribute">oninput=""</span>, especifíca qué hacer cuando un elemento recibe una entrada del usuario.<li>
+                <br>
+                <li><span class="atribute">oninvalid=""</span>, especifíca qué hacer cuando el elemento no cumple con sus restricciones.</li>
+                <br>
+                <li><span class="atribute">onreset=""</span>, especifíca qué hacer cuando el usuario reinicia los valores del elemento <span class="element">&ltform&gt</span>.</li>
+                <br>
+                <li><span class="atribute">onsearch=""</span>, especifíca qué hacer cuando un campo de búsqueda recibe un input.</li>
+                <br>
+                <li><span class="atribute">onselect=""</span>, especifíca qué hacer el usuario selecciona un texto.</li>
+                <br>
+                <li><span class="atribute">onsubmit=""</span>, especifíca qué hacer cuando el formato <span class="atribute">&ltform&gt</span> es entregado.</li>
+            </ul>
+        <br>
+        <li>Los eventos del teclado ocurren cuando el usuario interactua con él.</li>
+        <br>
+        <li>Los atributos eventuales de teclado son:</li>
+        <br>
+            <ul>
+                <li></li>
+            </ul>
     </ul>
 </body>
 </html>
