@@ -52,6 +52,8 @@
             <li><a href="#Atributos globales de HTML">Atributos globales de HTML.</a></li>
             <br>
             <li><a href="#Atributos eventuales de HTML">Atributos eventuales de HTML.</a></li>
+            <br>
+            <li><a href="#Información de las etiquetas de HTML">Información de las etiquetas de HTML.</a></li>
         </ul>
         
     </div>
@@ -1244,13 +1246,411 @@
                 <li><span class="atribute">onsubmit=""</span>, especifíca qué hacer cuando el formato <span class="element">&ltform&gt</span> es entregado.</li>
             </ul>
         <br>
-        <li>Los eventos del teclado ocurren cuando el usuario interactua con él.</li>
+        <li>Los atributos eventuales del teclado ocurren cuando el usuario interactua con él.</li>
         <br>
         <li>Los atributos eventuales de teclado son:</li>
         <br>
             <ul>
-                <li></li>
+                <li><span class="atribute">onkeydown=""</span> se activa cuando el usuario presiona una tecla del teclado.</li>
+                <br>
+                <li><span class="atribute">onkeypress=""</span> se activa cuando el usuario presiona una tecla que despliega un carácter.</li>
+                <br>
+                <li><span class="atribute">onkeyup=""</span> se activa cuando el usuario deja de presionar la tecla que está presionando.</li>
             </ul>
+        <br>
+        <li>Los atributos eventuales del mouse son los que ocurren cuando el usuario interactúa mediante el uso del mouse.</li>
+        <br>
+        <li>Los atributos eventuales del mouse son:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">onclick=""</span> se activa cuando el mouse hace click en el elemento con el atributo.</li>
+                <br>
+                <li><span class="atribute">ondblclick=""</span> se activa cuando el usuario hace doble click en el elemento con la función.</li>
+                <br>
+                <li><span class="atribute">onmousedown=""</span> se activa cuando el botón del ouse es presionado sobre el elemento con el atributo.</li>
+                <br>
+                <li><span class="atribute">onmousemove=""</span> se activa cuando el puntero del mouse se mueve sobre el elemento con el atributo.</li>
+                <br>
+                <li><span class="atribute">onmouseout=""</span> se activa cuando el puntero del mouse se mueve afuera del elemento con el atributo.</li>
+                <br>
+                <li><span class="atribute">onmouseover=""</span> se activa cuando el mouse se mueve adentro del elemento con el atributo.</li>
+                <br>
+                <li><span class="atribute">onmouseup=""</span> se activa cuando el botón del mouse deja de ser presionado.</li>
+                <br>
+                <li><span class="atribute">onwheel=""</span> se activa cuando la rueda del elemento rueda hacia arriba o hacia abajo en el elemento.</li>
+            </ul>
+        <br>
+        <li>Los atributos eventuales de cortapapeles son:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">oncopy=""</span> se activa cuando el usuario copia el contenido de un elemento.</li>
+                <br>
+                <li><span class="atribute">oncut=""</span> se activa cuando el usuario corta el contenido de un elemento.</li>
+                <br>
+                <li><span class="atribute">onpaste=""</span> se activa cuando el usuario pega contenido dentro de un elemento.</li>
+            </ul>
+        <br>
+        <li>Los atributos eventuales de media son usualmente usados en imágenes, videos y audios, pero aplican para todos los elementos de HTML.</li>
+        <br>
+        <li>los atributos eventuales de media son:</li>
+        <br>
+            <ul>
+                <li><span class="atribute">onabort=""</span> se activa al cancelarse la carga de un archivo de media.</li>
+                <br>
+                <li><span class="atribute">oncanplay=""</span> se activa cuando el navegador comienza a reproducir el media especificado.</li>
+                <br>
+                <li><span class="atribute">oncanplaythrough=""</span> se activa cuando el archivo de media está listo para reproducirse sin interrupciones.</li>
+                <br>
+                <li><span class="atribute">oncuechange=""</span> se activa cuando la señal del elemento <span class="element">&lttrack&gt</span> se cambia.</li>
+                <br>
+                <li><span class="atribute">ondurationchange=""</span> se activa cuando la duración del archivo de media es cambiada.</li>
+                <br>
+                <li><span class="atribute">onemptied=""</span> se activa cuando la media encuentra un error, su archivo se vuelve indisponible, o la playlist está vacia.</li>
+                <br>
+                <li><span class="atribute">onended=""</span> se activa cuando el archivo de media llega a su punto final.</li>
+                <br>
+                <li><span class="atribute">onerror=""</span> se activa cuando ocurre un error en la búsqueda de media data.</li>
+                <br>
+                <li><span class="atribute">onloadeddata=""</span> se activa cuando la media data se carga.</li>
+                <br>
+                <li><span class="atribute">onloadedmetadata=""</span> se activa cuando la metadata de un archivo de media se carga.</li>
+                <br>
+                <li><span class="atribute">onloadstart=""</span> se activa cuando se inicia la carga de un archivo de media.</li>
+                <br>
+                <li><span class="atribute">onpause=""</span> se activa cuando la reproducción de un archivo media es pausado.</li>
+                <br>
+                <li><span class="atribute">onplay=""</span> se activa cuando el archivo de media está lisot para ser reproducido luego de haber sido pausado.</li>
+                <br>
+                <li><span class="atribute">onplaying=""</span> se activa cuando el archivo de media se comienza a reproducir.</li>
+                <br>
+                <li><span class="atribute">onprogress=""</span> se activa cuando el navegador está en el proceso de obtener media data.</li>
+                <br>
+                <li><span class="atribute">onratechange=""</span> se activa cuando la velocidad de reproducción es cambiada.</li>
+                <br>
+                <li><span class="atribute">onseeked=""</span> se activa cuando el usuario acaba de moverse a una nueva posición de un viedo o audio.</li>
+                <br>
+                <li><span class="atribute">onseeking=""</span> se activa cuando el usuario comienza a moverse a una nueva posición de un video o audio.</li>
+                <br>
+                <li><span class="atribute">onstalled=""</span> se activa cuando el navegador inesperadamente deja de recolectar data media.</li>
+                <br>
+                <li><span class="atribute">onsuspend=""</span> se activa cuando la recolección de media data es detenida intencionalmente por el usuario.</li>
+                <br>
+                <li><span class="atribute">ontimeupdate=""</span> se activa cuando el usuario cambia la posición de reproducción, como adelantarla.</li>
+                <br>
+                <li><span class="atribute">onvolumechange=""</span> se activa cuando el volumen de media es mutado, o no mutado.</li>
+                <br>
+                <li><span class="atribute">onwaiting=""</span> se activa cuando la reproducción es pausada para cargar más data.</li>
+            </ul>
+        <br>
+        <h2 id="Información de las etiquetas de HTML"><u>Información de las etiquetas de HTML.</u></h2>
+        <li>Las etiquetas de HTML son como palabras claves que definen como el navegador web despliegan el contenido.</li>
+        <br>
+        <li>Las etiquetas de HTML contiene tres partes; etiqueta de apertura, contenido, y etiqueta de cierre. Sin embargo, algunas no contienen etiqueta de cierre, lo que significa que no tienen contenido tampoco.</li>
+        <br>
+        <li><b><u>Sintaxis de una etiqueta:</u></b></li>
+        <p><span class="element">&ltp&gt</span><span class="content">This is the content</span><span class="element">&ltp/&gt</span></p>
+            <ul>
+                <li><span class="content">Contenido</span></li>
+                <li><span class="element">Elemento</span></li>
+            </ul>
+        <br>
+        <li>Los tipos de etiquetas de HTML son:</li>
+        <h3><u>Etiquetas no cerradas.</u></h3>
+        <li>Las etiquetas no cerradas son aquellas que no se cierran y no tienen contenido, por ejemplo:</li>
+        <br>
+            <ul class="linea">
+                <li><span class="element">&ltbr&gt</span> significa break line, rompe la línea del código, actúa como la tecla <kbd>Enter</kbd>.</li>
+                <br>
+                <li><span class="element">&lthr&gt</span> significa horizontal rule, se usa para insertar una línea horizontalmente a traves de la página.</li>
+            </ul>
+        <h3><u>Etiquetas de Meta.</u></h3>
+        <ul class="linea">
+            <li><span class="element">&ltDOCTYPE&gt</span></li>
+            <br>
+            <li><span class="element">&lttitle&gt</span></li>
+            <br>
+            <li><span class="element">&ltlink&gt</span></li>
+            <br>
+            <li><span class="element">&ltmeta&gt</span></li>
+            <br>
+            <li><span class="element">&ltstyle&gt</span></li>
+        </ul>
+        <h3><u>Etiquetas de texto.</u></h3>
+        <ul class="linea">
+            <li><span class="element">&ltp&gt</span></li>
+            <br>
+            <li><span class="element">&lth1&gt &lth2&gt &lth3&gt &lth4&gt &lth5&gt &lth6&gt</span></li>
+            <br>
+            <li><span class="element">&ltstrong&gt</span></li>
+            <br>
+            <li><span class="element">&ltem&gt</span></li>
+            <br>
+            <li><span class="element">&ltabbr&gt</span></li>
+            <br>
+            <li><span class="element">&ltacronym&gt</span></li>
+            <br>
+            <li><span class="element">&ltaddress&gt</span></li>
+            <br>
+            <li><span class="element">&ltbdo&gt</span></li>
+            <br>
+            <li><span class="element">&ltblockquote&gt</span></li>
+            <br>
+            <li><span class="element">&ltcite&gt</span></li>
+            <br>
+            <li><span class="element">&ltq&gt</span></li>
+            <br>
+            <li><span class="element">&ltcode&gt</span></li>
+            <br>
+            <li><span class="element">&ltins&gt</span></li>
+            <br>
+            <li><span class="element">&ltdel&gt</span></li>
+            <br>
+            <li><span class="element">&ltdfn&gt</span></li>
+            <br>
+            <li><span class="element">&ltkbd&gt</span></li>
+            <br>
+            <li><span class="element">&ltpre&gt</span></li>
+            <br>
+            <li><span class="element">&ltsamp&gt</span></li>
+            <br>
+            <li><span class="element">&ltvar&gt</span></li>
+        </ul>
+        <h3><u>Etiquetas de link.</u></h3>
+        <ul class="linea">
+            <li><span class="element">&lta&gt</span></li>
+            <br>
+            <li><span class="element">&ltbase&gt</span></li>
+        </ul>
+        <h3><u>Etiquetas de imagenes y objetos.</u></h3>
+        <ul class="linea">
+            <li><span class="element">&ltimg&gt</span></li>
+            <br>
+            <li><span class="element">&ltarea&gt</span></li>
+            <br>
+            <li><span class="element">&ltmap&gt</span></li>
+            <br>
+            <li><span class="element">&ltparam&gt</span></li>
+            <br>
+            <li><span class="element">&ltobject&gt</span></li>
+        </ul>
+        <h3><u>Etiquetas de lista.</u></h3>
+        <ul class="linea">
+            <li><span class="element">&ltul&gt</span></li>
+            <br>
+            <li><span class="element">&ltol&gt</span></li>
+            <br>
+            <li><span class="element">&ltli&gt</span></li>
+            <br>
+            <li><span class="element">&ltdl&gt</span></li>
+            <br>
+            <li><span class="element">&ltdt&gt</span></li>
+            <br>
+            <li><span class="element">&ltdd&gt</span></li>
+        </ul>
+        <h3><u>Etiquetas de tabla.</u></h3>
+        <ul class="linea">
+            <li><span class="element">&lttable&gt</span></li>
+            <br>
+            <li><span class="element">&lttr&gt</span></li>
+            <br>
+            <li><span class="element">&lttd&gt</span></li>
+            <br>
+            <li><span class="element">&ltth&gt</span></li>
+            <br>
+            <li><span class="element">&lttbody&gt</span></li>
+            <br>
+            <li><span class="element">&ltthead&gt</span></li>
+            <br>
+            <li><span class="element">&lttfoot&gt</span></li>
+            <br>
+            <li><span class="element">&ltcol&gt</span></li>
+            <br>
+            <li><span class="element">&ltcolgroup&gt</span></li>
+            <br>
+            <li><span class="element">&ltcaption&gt</span></li>
+        </ul>
+        <h3><u>Etiquetas de form.</u></h3>
+        <ul class="linea">
+            <li><span class="element">&ltform&gt</span></li>
+            <br>
+            <li><span class="element">&ltinput&gt</span></li>
+            <br>
+            <li><span class="element">&lttextarea&gt</span></li>
+            <br>
+            <li><span class="element">&ltselect&gt</span></li>
+            <br>
+            <li><span class="element">&ltoption&gt</span></li>
+            <br>
+            <li><span class="element">&ltoptgroup&gt</span></li>
+            <br>
+            <li><span class="element">&ltbutton&gt</span></li>
+            <br>
+            <li><span class="element">&ltlabel&gt</span></li>
+            <br>
+            <li><span class="element">&ltfieldset&gt</span></li>
+            <br>
+            <li><span class="element">&ltlegend&gt</span></li>
+        </ul>
+        <h3><u>Etiquetas de scripting.</u></h3>
+        <ul class="linea">
+            <li><span class="element">&ltscript&gt</span></li>
+            <br>
+            <li><span class="element">&ltnoscript&gt</span></li>
+        </ul>
+        <h3><u>Todas las etiquetas de HTML.</u></h3>
+        <ul>
+            <li><b>&lt!-- --&gt</b><br>
+                <p>Esta etiqueta se usa para insertar comentarios, frases que son visibles en el código de la página, pero son ignorados al momento de desplegar la página.</p>
+            </li>
+            <br>
+            <li><span class="element">&lt!DOCTYPE&gt</span><br>
+                <p>Esta etiqueta especifíca la versión de HTML que se está usando, según la versión que uses, se puede desplegar en diferentes navegadores y usar una mayor variedad de etiquetas.</p>
+            </li>
+            <br>
+            <li><span class="element">&lta&gt</span><br>
+                <p>Esta es la etiqueta anchor, crea un hyperlink o link, tiene un atributo principal, <span class="atribute">href=""</span> para poner la dirección URL a la que querés que el link llegue.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltabbr&gt</span> <br>
+                <p>Define una abreviación para palabras largas o para una frase en particular.</p>
+            </li>
+            <br>
+            <li><span class="elemenr">&ltacronym&gt</span><br>
+                <p>Define un acrónimo para una palabra especial, como Onu que es el acrónimo para Organización de las Naciones Unidas.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltaddress&gt</span><br>
+                <p>Define la información del contacto del autor del elemento <span class="element">&ltarticle&gt</span>.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltarea&gt</span><br>
+                <p>Defien el area para un mapa de imagen.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltarticle&gt</span><br>
+                <p>Define un contenido aparte e independiente, con sus propias características.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltaside&gt</span><br>
+                <p>Define contenido aparte del contenido principal, usualmente representado como un sidebar.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltaudio&gt</span><br>
+                <p>Es usada para encerrar contenido de sonido en un documento HTML.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltb&gt</span><br>
+                <p>Es usada para marcar texto en negrita.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltbase&gt</span><br>
+                <p>Esta etiqueta define la base URL para todas las URL relativas dentro del documento.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltbdi&gt</span><br>
+                <p>Esta etiqueta significa Bi-Direccional Isolation, aisla un pedazo de texto para que pueda ser formateado con una dirección diferente al texto que hay fuera de él.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltbdo&gt</span><br>
+                <p>Se usa para anular la dirección que tiene su contenido.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltblockquote&gt</span><br>
+                <p>Es usada para definir contexto que es tomado desde otra fuente.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltbody&gt</span><br>
+                <p>Se usa para definir la sección del cuerpo de un documento HTML, lo que tenga adentro es lo que se muestra en la página.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltbr&gt</span><br>
+                <p>Se usa para aplicar la quiebra de una línea, al usarla, se comienza una nueva línea.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltbutton&gt</span><br>
+                <p>Se usa para representar un botón clickeable cuya función es definida con JavaScript.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltcanvas&gt</span><br>
+                <p>Se usa para proveer un espacio gráfico en el documento web.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltcaption&gt</span><br>
+                <p>Se usa para definir un título para una tabla.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltcite&gt</span><br>
+                <p>Se usa para definir el título del trabajo, libro, sitio web, etc.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltcode&gt</span><br>
+                <p>Se usa para desplegar una parte de código de programación en el documento de HTML.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltcol&gt</span><br>
+                <p>Es usada dentro de la etiqueta <span class="element">&ltcolgroup&gt</span> para definir las propiedades y características de una columna en particular de una tabla.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltcolgroup&gt</span><br>
+                <p>Se usa para definir un grupo de columnas en una tabla para aplicarles propiedades y estilos.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltdata&gt</span><br>
+                <p>Se usa para vincular el contenido dado con una traducción legible por una máquina.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltdatalist&gt</span><br>
+                <p>Esta etiqueta especifica una lista de opciones predeterminadas para un elemento <span class="element">&ltinput&gt</span>, siempre y cuando tengan el mismo <span class="atribute">id=""</span>.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltdd&gt</span><br>
+                <p>Significa Definition Data, provee una descripción de un item de una lista de descripción, <span class="element">&ltdl&gt</span>.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltdel&gt</span><br>
+                <p>Define texto que ha sido eliminado del documento.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltdetails&gt</span><br>
+                <p>Define información adicional que el usuario puede ver o esconder.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltdfn&gt</span><br>
+                <p>Se usa para indicar un término que está siendo definido en una frase u oración.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltdialog&gt</span><br>
+                <p>Esta etiqueta define una caja de dialogos una subventana, su atributo es <span class="atribute">open</span>, este especifica que el elemento está activo y que el usuario puede interactuar con él.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltdiv&gt</span><br>
+                <p>Se usa para definir una sección del documento en particular.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltdl&gt</span><br>
+                <p>Se usa para definir el comienzo y el final de una lista de descripciones, <span class="element">&ltdl&gt</span>.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltdt&gt</span><br>
+                <p>Se usa para definir un término que se va a describir en la lista de descripciones.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltem&gt</span><br>
+                <p>Define texto que se va a desplegar inclinado, estilo cursiva.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltembed&gt</span><br>
+                <p>Es usada como contenedor para un archivo, aplicación, media, todo externo.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltfieldset&gt</span><br>
+                <p>Se usa para agrupar elementos relacionados entre sí adentro de un <span class="element">&ltform&gt</span>.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltfigcaption&gt</span><br>
+                <p></p>
+            </li>
+        </ul>
     </ul>
 </body>
 </html>

@@ -49,13 +49,22 @@ table{
     width: 300px;
 }
 
-body{
+/*body{
     background-color: black;
     color: yellow;
     font-size: 17px;
-}
+}*/
 
 #Indice{
     font-size: 18px;
+}
+
+.linea{
+    display: flex;
+}
+
+.linea li {
+    margin-right: 6px;
+    list-style: none;
 }
 
