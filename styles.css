@@ -1,3 +1,9 @@
+body{
+    background-color: black;
+    color: yellow;
+    font-size: 17px;
+}
+
 .element{
     color: blue;
 }
@@ -47,12 +53,6 @@ table{
 
 #conjunto{
     width: 300px;
-}
-
-body{
-    background-color: black;
-    color: yellow;
-    font-size: 17px;
 }
 
 #Indice{
