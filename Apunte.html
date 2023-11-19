@@ -10,53 +10,56 @@
     <h1><u>Información y etiquetas de HTML.</u></h1>
     <h2><u>Índice.</u></h2>
     <div>
-        <ul id="Indice">
-            <li><a href="#Información general de HTML">Información general de HTML</a></li>
-            <br>
-            <li><a href="#Un hipervínculo en HTML">Un hipervínculo en HTML</a></li>
-            <br>
-            <li><a href="#Una imagen en HTML.">Una imagen en HTML.</a></li>
-            <br>
-            <li><a href="#Tablas de HTML">Tablas de HTML</a></li>
-            <br>
-            <li><a href="#Listas de HTML">Listas de HTML</a></li>
-            <br>
-            <li><a href="#Formularios de HTML.">Formularios de HTML.</a></li>
-            <br>
-            <li><a href="#CSS en HTML">CSS en HTML.</a></li>
-            <br>
-            <li><a href="#Página Web dentro de HTML">Página Web dentro de HTML.</a></li>
-            <br>
-            <li><a href="#JavaScript en HTML">JavaScript en HTML.</a></li>
-            <br>
-            <li><a href="#Comentarios de HTML">Comentarios de HTML.</a></li>
-            <br>
-            <li><a href="#Direcciones de carpeta de HTML">Direcciones de carpeta de HTML.</a></li>
-            <br>
-            <li><a href="#Head de HTML">Head de HTML.</a></li>
-            <br>
-            <li><a href="#Diseños HTML">Diseños HTML.</a></li>
-            <br>
-            <li><a href="#HTML sensible">HTML sensible.</a></li>
-            <br>
-            <li><a href="#Código de computadora para HTML">Código de computadora para HTML.</a></li>
-            <br>
-            <li><a href="#Entidades de HTML">Entidades de HTML.</a></li>
-            <br>
-            <li><a href="#Símbolos de HTML">Símbolos de HTML.</a></li>
-            <br>
-            <li><a href="#Conjunto de carácteres de HTML">Conjunto de carácteres de HTML.</a></li>
-            <br>
-            <li><a href="#Codificación URL de HTML">Codificación URL de HTML.</a></li>
-            <br>
-            <li><a href="#Atributos globales de HTML">Atributos globales de HTML.</a></li>
-            <br>
-            <li><a href="#Atributos eventuales de HTML">Atributos eventuales de HTML.</a></li>
-            <br>
-            <li><a href="#Información de las etiquetas de HTML">Información de las etiquetas de HTML.</a></li>
-            <br>
-            <li><a href="#Todas las etiquetas de HTML">Todas las etiquetas de HTML.</a></li>
-        </ul>
+        <ol id="Indice" style="display: flex;">
+            <div style="margin-left: 0%;">
+                <li><a href="#Información general de HTML">Información general de HTML</a></li>
+                <br>
+                <li><a href="#Un hipervínculo en HTML">Un hipervínculo en HTML</a></li>
+                <br>
+                <li><a href="#Una imagen en HTML.">Una imagen en HTML.</a></li>
+                <br>
+                <li><a href="#Tablas de HTML">Tablas de HTML</a></li>
+                <br>
+                <li><a href="#Listas de HTML">Listas de HTML</a></li>
+                <br>
+                <li><a href="#Formularios de HTML.">Formularios de HTML.</a></li>
+                <br>
+                <li><a href="#CSS en HTML">CSS en HTML.</a></li>
+                <br>
+                <li><a href="#Página Web dentro de HTML">Página Web dentro de HTML.</a></li>
+                <br>
+                <li><a href="#JavaScript en HTML">JavaScript en HTML.</a></li>
+                <br>
+                <li><a href="#Comentarios de HTML">Comentarios de HTML.</a></li>
+                <br>
+                <li><a href="#Direcciones de carpeta de HTML">Direcciones de carpeta de HTML.</a></li>
+            </div>
+            <div>
+                <li><a href="#Head de HTML">Head de HTML.</a></li>
+                <br>
+                <li><a href="#Diseños HTML">Diseños HTML.</a></li>
+                <br>
+                <li><a href="#HTML sensible">HTML sensible.</a></li>
+                <br>
+                <li><a href="#Código de computadora para HTML">Código de computadora para HTML.</a></li>
+                <br>
+                <li><a href="#Entidades de HTML">Entidades de HTML.</a></li>
+                <br>
+                <li><a href="#Símbolos de HTML">Símbolos de HTML.</a></li>
+                <br>
+                <li><a href="#Conjunto de carácteres de HTML">Conjunto de carácteres de HTML.</a></li>
+                <br>
+                <li><a href="#Codificación URL de HTML">Codificación URL de HTML.</a></li>
+                <br>
+                <li><a href="#Atributos globales de HTML">Atributos globales de HTML.</a></li>
+                <br>
+                <li><a href="#Atributos eventuales de HTML">Atributos eventuales de HTML.</a></li>
+                <br>
+                <li><a href="#Información de las etiquetas de HTML">Información de las etiquetas de HTML.</a></li>
+                <br>
+                <li><a href="#Todas las etiquetas de HTML">Todas las etiquetas de HTML.</a></li>   
+            </div>
+        </ol>
         
     </div>
     <ul>
@@ -692,7 +695,7 @@
             <ul>
                 <li><span class="atribute">allowfullscreen=""</span> permite que la ventana del <span class="element">&ltiframe&gt</span> se expanda en toda la pantalla.</li>
                 <br>
-                <li><span class="atribute">height=""</span> y <span class="element">width=""</span> definen el alto y el ancho de la ventana.</li>
+                <li><span class="atribute">height=""</span> y <span class="atribute">width=""</span> definen el alto y el ancho de la ventana.</li>
                 <br>
                 <li><span class="atribute">name=""</span> define el nombre del <span class="element">&ltiframe&gt</span>, y puede ser usado para vincularlo con JavaScript, &lta&gt, &ltform&gt, &ltinput&gt, &ltbutton&gt.</li>
                 <br>
@@ -1507,27 +1510,30 @@
             </li>
             <br>
             <li><span class="element">&lt!DOCTYPE&gt</span><br>
-                <p>Esta etiqueta especifíca la versión de HTML que se está usando, según la versión que uses, se puede desplegar en diferentes navegadores y usar una mayor variedad de etiquetas.</p>
+                <p>Esta etiqueta se inserta antes de la etiqueta <span class="element">&lthtml&gt</span>, su función es informar al navegador acerca de la versión de HTML que se está empleando. Se le llama DTD, declaración del tipo de documento. <br> Algunos ejemplos de versiones HTML son: HTML 4.01 Strict, HTML 4.01 Transitional, XHTML 1.1, etc.</p>
             </li>
             <br>
             <li><span class="element">&lta&gt</span><br>
-                <p>Esta es la etiqueta anchor, crea un hyperlink o link, tiene un atributo principal, <span class="atribute">href=""</span> para poner la dirección URL a la que querés que el link llegue.</p>
+                <p>Esta etiqueta significa anchor. Define un vinculo que conecta una página con otra. El vinculo puede ser con otra página web, un archivo, una localidad de la misma página, o un URL. <br>El atributo <span class="atribute">href=""</span> es el más importante de la etiqueta, su función es contener la dirección o URL de la localidad con la que se desea vincular la página. <br>Otro atributo importante para anchor es <span class="atribute">target=""</span>, este especifica la localización de donde la otra página web será abierta, ya sea en la misma pestaña, una pestaña nueva, o hasta una ventana nueva.</p>
             </li>
             <br>
             <li><span class="element">&ltabbr&gt</span> <br>
-                <p>Define una abreviación para palabras largas o para una frase en particular.</p>
-            </li>
-            <br>
-            <li><span class="elemenr">&ltacronym&gt</span><br>
-                <p>Define un acrónimo para una palabra especial, como Onu que es el acrónimo para Organización de las Naciones Unidas.</p>
+                <p>Define una abreviación para palabras largas o para una frase en particular. Esta etiqueta usualmente viene con el atributo <span class="atribute">title=""</span>, de esa manera lo que pongas en ese atributo aparecerá en la pantalla al poner el mouse sobre la abreviación. Por ejemplo: <abbr title="HyperText Markup Languaje">HTML</abbr>.</p>
             </li>
             <br>
             <li><span class="element">&ltaddress&gt</span><br>
-                <p>Define la información del contacto del autor del elemento <span class="element">&ltarticle&gt</span>.</p>
+                <p>Define la información del creador de la página, puede o no formar parte del elemento <span class="element">&ltarticle&gt</span>. <br>Ejemplos de esto son: contacto de negocios en el header de la página, o el autor de un libro digital en la parte de abajo.</p>
             </li>
             <br>
             <li><span class="element">&ltarea&gt</span><br>
-                <p>Defien el area para un mapa de imagen.</p>
+                <p>Esta etiqueta siempre se usa dentro del elemento <span class="element">&ltmap&gt</span>. Define una área clickeable dentro de un <b>image-map</b> asociada con un hipervinculo, al clickearla realiza acciones como abrir el mapa en una nueva pestaña. Al usar esta etiqueta, uno puede programar varias áreas del mapa para acceder a varias localizaciones. <br>Tiene dos atributos obligatorios: <span class="atribute">shape=""</span> y <span class="atribute">coords=""</span>. <span class="atribute">Shape=""</span> especifica la forma del mapa, ya sea <span class="atribute">rectangle, circle, square, polygon</span>. <span class="atribute">Coords=""</span> especifica las coordenadas del mapa que seleccionamos. <br>Un image-map es una imagen gráfica con áreas activas para acceder a diferentes localizaciones. Para crearlo se necesitan:
+                <ul>
+                    <li>Una etiqueta <span class="element">&ltimg&gt</span> con el atributo <span class="atribute">usemap=""</span>, este define un nombre de mapa valido.</li>
+                    <br>
+                    <li>Un elemento <span class="element">&ltmap&gt</span> con el atributo <span class="atribute">name=""</span> con el mismo valor que el <span class="atribute">usemap=""</span> del elemento <span class="element">&ltimg&gt</span>.</li>
+                    <br>
+                    <li></li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltarticle&gt</span><br>

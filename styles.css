@@ -1,7 +1,11 @@
 body{
-    background-color: black;
-    color: yellow;
+    background-image: url(html-5-simbolo-3d-hermoso-icono-html-5-render-3d_582637-318.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
     font-size: 17px;
+    font-weight: 600;
 }
 
 .element{
@@ -57,6 +61,11 @@ table{
 
 #Indice{
     font-size: 18px;
+}
+
+#Indice div{
+    margin-left: 30px;
+    margin-right: 30px ;
 }
 
 .linea{
