@@ -1526,26 +1526,42 @@
             </li>
             <br>
             <li><span class="element">&ltarea&gt</span><br>
-                <p>Esta etiqueta siempre se usa dentro del elemento <span class="element">&ltmap&gt</span>. Define una área clickeable dentro de un <b>image-map</b> asociada con un hipervinculo, al clickearla realiza acciones como abrir el mapa en una nueva pestaña. Al usar esta etiqueta, uno puede programar varias áreas del mapa para acceder a varias localizaciones. <br>Tiene dos atributos obligatorios: <span class="atribute">shape=""</span> y <span class="atribute">coords=""</span>. <span class="atribute">Shape=""</span> especifica la forma del mapa, ya sea <span class="atribute">rectangle, circle, square, polygon</span>. <span class="atribute">Coords=""</span> especifica las coordenadas del mapa que seleccionamos. <br>Un image-map es una imagen gráfica con áreas activas para acceder a diferentes localizaciones. Para crearlo se necesitan:
+                <p>Esta etiqueta siempre se usa dentro del elemento <span class="element">&ltmap&gt</span>. Define una área clickeable dentro de un <b>image-map</b> asociada con un hipervinculo, al clickearla realiza acciones como abrir el mapa en una nueva pestaña. Al usar esta etiqueta, uno puede programar varias áreas del mapa para acceder a varias localizaciones. <br>Un image-map es una imagen gráfica con áreas activas para acceder a diferentes localizaciones. Para crearlo se necesitan:
                 <ul>
                     <li>Una etiqueta <span class="element">&ltimg&gt</span> con el atributo <span class="atribute">usemap=""</span>, este define un nombre de mapa valido.</li>
                     <br>
                     <li>Un elemento <span class="element">&ltmap&gt</span> con el atributo <span class="atribute">name=""</span> con el mismo valor que el <span class="atribute">usemap=""</span> del elemento <span class="element">&ltimg&gt</span>.</li>
                     <br>
-                    <li></li>
-                </ul></p>
+                    <li>Uno o más elementos <span class="element">&ltarea&gt</span> dentro del <span class="element">&ltmap&gt</span> para marcar las localidades con las que se puede interactuar.</li>
+                </ul>
+            <br>
+            Tiene dos atributos obligatorios: <span class="atribute">shape=""</span> y <span class="atribute">coords=""</span>. <span class="atribute">Shape=""</span> especifica la forma del mapa, ya sea <span class="atribute">rectangle, circle, square, polygon</span>. <span class="atribute">Coords=""</span> especifica las coordenadas del mapa que seleccionamos.
+            </p>
             </li>
             <br>
             <li><span class="element">&ltarticle&gt</span><br>
-                <p>Define un contenido aparte e independiente, con sus propias características, puede ser un articulo de periódico, de un blog, etc.</p>
+                <p>Define un contenido independiente y propio dentro de un domento, una página, aplicación, etc. Usualmente se suele usar para organizar publiaciones, comentarios, etc.</p>
             </li>
             <br>
             <li><span class="element">&ltaside&gt</span><br>
-                <p>Define contenido aparte del contenido principal, usualmente representado como un sidebar.</p>
+                <p>Esta etiqueta provee información acerca del contenido principal. Representa contenido que forma el recorrido textual principal del documento. Un ejemplo de esto es una barra lateral que funciona como guia de una página.</p>
             </li>
             <br>
             <li><span class="element">&ltaudio&gt</span><br>
-                <p>Es usada para encerrar contenido de sonido en un documento HTML.</p>
+                <p>Esta etiqueta se usa para definir sonidos como música y clips de audio. Hay tres tipos de formato de archivo de audio que están disponibles en HTML 5; <b>mp3, wav, ogg.</b> <br>Sus atributos son:
+                <ul>
+                    <li><span class="atribute">controls</span> define los controles de pausa y play para el archivo.</li>
+                    <br>
+                    <li><span class="atribute">autoplay </span> especifica que el video se reproducirá tan pronto esté listo.</li>
+                    <br>
+                    <li><span class="atribute">loop</span> especifica que el video se reproducirá una y otra vez, cada vez que termine.</li>
+                    <br>
+                    <li><span class="atribute">muted</span> se usa para mutear el audio.</li>
+                    <br>
+                    <li><span class="atribute">preload</span> especifica la posición para subir un audio cuando la página cargue.</li>
+                    <br>
+                    <li><span class="atribute">src</span> especifica el URL del archivo de audio.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltb&gt</span><br>
