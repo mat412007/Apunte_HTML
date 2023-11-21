@@ -1737,23 +1737,49 @@
             </li>
             <br>
             <li><span class="element">&ltfieldset&gt</span><br>
-                <p>Se usa para agrupar elementos relacionados entre sí adentro de un <span class="element">&ltform&gt</span>.</p>
+                <p>Se usa para agrupar elementos relacionados entre sí adentro de un <span class="element">&ltform&gt</span>. Estos elementos pueden ser <span class="element">&ltlabel&gt</span>, <span class="element">&ltinput&gt</span>, etc. <br>El uso de esta etiqueta es opcional, pero su uso nos ayuda a entender más fácilmente el propósito del <span class="element">&ltform&gt</span> en el que está. <br>Al usarla, su primer elemento es <span class="element">&ltlegend&gt</span>, este actúa como un título que describe el propósito de la información que se va a insertar. Sus atributos específicos son: 
+                <ul>
+                    <li><span class="atribute">disabled</span> especifica que todos los elementos interactivos dentro del <span class="element">&ltfieldset&gt</span> del <span class="element">&ltform&gt</span> están desactivados.</li>
+                    <br>
+                    <li><span class="atribute">form=""</span> su propósito es la vinculación de sí mismo con su <span class="element">&ltform&gt</span>, su valor debe ser el mismo que el <span class="atribute">id=""</span> del segundo.</li>
+                    <br>
+                    <li><span class="atribute">name=""</span> especifica el nombre del campo, es útil cuando se desea interactuar con JavaScript.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltfigcaption&gt</span><br>
-                <p>Cumple la función que un <span class="element">&ltcaption&gt</span>, excepto que este lo hace con el elemento <span class="element">&ltfigure&gt</span>.</p>
+                <p>Cumple la función que un <span class="element">&ltcaption&gt</span>, excepto que este lo hace para una imagen, se usa dentro del elemento <span class="element">&ltfigure&gt</span>. <br>La diferencia es que este elemento puede insertarse tanto al principio como al final del elemento <span class="element">&ltfigure&gt</span>.</p>
             </li>
             <br>
             <li><span class="element">&ltfigure&gt</span><br>
-                <p>Especifica contenido independiente, como ilustraciones, diagramas, fotos, listas de código, etc.</p>
+                <p>Esta etiqueta se usa para agrupar fotos en una página web. Con ella vos podes agrupar fotos o imagenes con algo de contenido de texto. Sin mencionar añadir un título usando <span class="element">&ltfigcaption&gt</span>.</p>
             </li>
             <br>
             <li><span class="element">&ltfooter&gt</span><br>
-                <p>Describe la sección inferior de la página web.</p>
+                <p>Describe la sección inferior de la página web o de una división grande en la que se encuentre. <br>Usualmente se usa para contener información relacionada con el contenido de la página; como su author, documentos relacionados, etc, se usa para información que uno puede clasificar como relevante.</p>
             </li>
             <br>
             <li><span class="element">&ltform&gt</span><br>
-                <p>Este elemento es un contenedor para diferentes tipos de herramientas con las cuales el usuario puede interactuar con la página, como campos de texto, botones, preguntas de opción múltiple, etc.</p>
+                <p>Este elemento es un contenedor para diferentes tipos de herramientas con las cuales el usuario puede interactuar con la página, como campos de texto, botones, preguntas de opción múltiple, etc. <br>Se usa formularios en los que el usuario inserta información que luego es enviada a algún lado en específico, como la suscripción a un evento online. <br>Los elementos que se usan dentro de este elemento son:
+                <ul>
+                    <li><span class="element">&ltinput&gt</span> define un control para insertar información, ya sea texto o número.</li>
+                    <br>
+                    <li><span class="element">&lttextarea&gt</span> se define a sí mismo como un &ltinput&gt, excepto que este es de muchas líneas, se usa para interacciones largas, como textos largos.</li>
+                    <br>
+                    <li><span class="element">&ltlabel&gt</span> define una etiqueta para un &ltinput&gt, define acerca de qué va a ser la información que se va a insertar en el control interactivo.</li>
+                    <br>
+                    <li><span class="element">&ltfieldset&gt</span> agrupa elementos del <span class="element">&ltform&gt</span> dentro de él, siempre y cuando estén relacionados entre sí.</li>
+                    <br>
+                    <li><span class="element">&ltlegend&gt</span> actúa como un título para describir el tipo de contenido de un <span class="element">&ltfieldset&gt</span>.</li>
+                    <br>
+                    <li><span class="element">&ltbutton&gt</span> define un botón clickeable cuya función puede ser o no ser programada con JavaScript o algún otro tipo de lenguaje de script.</li>
+                    <br>
+                    <li><span class="element">&ltselect&gt</span> define el principio y el final de un drop-down list.</li>
+                    <br>
+                    <li><span class="element">&ltoption&gt</span> define una opción en un drop-down list creada por <span class="element">&ltselect&gt</span>.</li>
+                    <br>
+                    <li><span class="element">&ltoptgroup&gt</span> agrupa un grupo de opciones relacionadas en un drop-down list.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&lth1&gt &lth2&gt &lth3&gt &lth4&gt &lth5&gt &lth6&gt</span><br>
