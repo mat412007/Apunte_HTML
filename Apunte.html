@@ -1822,31 +1822,64 @@
             </li>
             <br>
             <li><span class="element">&lti&gt</span><br>
-                <p>Significa italic, despliega texto en cursiva, con inclinación.</p>
+                <p>Significa italic, despliega texto en cursiva, con inclinación. Se usa para indicar texto con diferente voz que lo demás, como términos técnicos, cosas ficcionales, etc.</p>
             </li>
             <br>
             <li><span class="element">&ltiframe&gt</span><br>
-                <p>Representa inline frame, representa un contexto de navegación anidado, el cual permite incrustrar otra página HTML en la página actual.</p>
+                <p>Se usa para desplegar una página web interna encerrada en un marco, significa inline frame. Este contenido puede interactuar con el resto del contenido mediante el uso de JavaScript. <br>Sus atributos principales son:
+                <ul>
+                    <li><span class="atribute">src=""</span> contiene el URL de la página que se desea insertar en el marco.</li>
+                    <br>
+                    <li><span class="atribute">height=""</span> especifica la altura del marco.</li>
+                    <br>
+                    <li><span class="atribute">width=""</span> especifica el ancho del marco.</li>
+                    <br>
+                    <li><span class="atribute">allowfullscreen</span> habilita opción de aumentra el tamaño del marco al tamaño de la pantalla completa.</li>
+                    <br>
+                    <li><span class="atribute">name=""</span> especifica el nombre del marco, esto facilita su vinculación con otros elementos para mejorar su rendimiento.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltimg&gt</span><br>
-                <p>Se usa para insertar una imagen en el documento HTML, sus atributos principales son, <span class="atribute">src=""</span> y <span class="atribute">alt=""</span>.</p>
+                <p>Esta etiqueta se usa para desplegar una imagen en una página web. Es una etiqueta de solo atributos sin etiqueta de cierre. <br>Sus atributos son: 
+                    <ul>
+                        <li><span class="atribute">src=""</span> es el atributo más importante, contiene la posición de la imagen que deseas insertar, puede ser una ubicación en tu servisor o una dirección de una imagen en internet.</li>
+                        <br>
+                        <li><span class="atribute">alt=""</span> representa texto alternativo que se mostrará en el lugar de la imagen en caso de que esta no sea capaz de insertarse correctamente. De esta manera uno tiene un plan de repuesto en caso de haya un error al cargar la imagen.</li>
+                        <br>
+                        <li><span class="atribute">width="" height=""</span> representan el ancho y el alto de la imagen en pixeles. El tamaño también puede ser especificado en CSS.</li>
+                    </ul>
+                </p>
             </li>
             <br>
             <li><span class="element">&ltinput&gt</span><br>
-                <p>Define un campo de input en el documento HTML para que el usuario ingrese información en él.</p>
+                <p>Define un campo de input en el documento HTML para que el usuario ingrese información en él. Esto sirve para que el usuario se comunique con el sitio web o aplicación que esté usando.</p>
             </li>
             <br>
             <li><span class="element">&ltins&gt</span><br>
-                <p>Representa texto que ha sido insertado dentro de un documento HTML.</p>
+                <p>Representa texto nuevo que ha sido insertado dentro de un documento HTML. Muestra el texto con una línea de subrayado. Usualmente se usa con la etiqueta <span class="element">&ltdel&gt</span>, de esa forma uno marca el texto que ha sido eliminado y el que se añadió en su lugar. <br>Sus atributos especifícos son:
+                <ul>
+                    <li><span class="atribute">cite=""</span> contiene el URL de la fuente que explica la razón del cambio.</li>
+                    <br>
+                    <li><span class="atribute">datetime=""</span> contiene el año, mes. día, horas, minutos y segundos del cambio. Se escribe de esta manera: y/m/d h:m:s.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltkbd&gt</span><br>
-                <p>Es usada para definir una tecla del teclado.</p>
+                <p>Esta etiqueta significa keyboard. Representa contenido que ha sido insertado por el usuario mediante el teclado, el keyboard.</p>
             </li>
             <br>
             <li><span class="element">&ltlabel&gt</span><br>
-                <p>Define una etiqueta para un <span class="element">&ltinput&gt</span></p>
+                <p>Este elemento define una etiqueta para un <span class="element">&ltinput&gt</span> dentro de un elemento <span class="element">&ltform&gt</span>. Al clickear la etiqueta te lleva directamenete al control interactivo con el que esté conectado o haga referencia. <br>Hay dos maneras de conectar un <span class="element">&ltlabel&gt</span> con un <span class="element">&ltinput&gt</span>:
+                <ul>
+                    <li>Setear el atributo <span class="atribute">id=""</span> del <span class="element">&ltinput&gt</span> con el mismo valor que el atributo <span class="atribute">for=""</span> del <span class="element">&ltlabel&gt</span>.</li>
+                    <br>
+                    <li>Ubicar la etiqueta <span class="element">&ltinput&gt</span> dentro del elemento <span class="element">&ltform&gt</span>, y cerrar el primero con un <b>/&gt</b>.</li>
+                </ul></p>
+            </li>
+            <br>
+            <li><span class="element">&ltlegend&gt</span>
+                <p>Esta etiqueta se usa para insertar un título en un elemento padre como un <span class="element">&ltfieldset&gt</span>. Esta etiqueta debe ser la primera en el elemento en caso de ser usada.</p>
             </li>
             <br>
             <li><span class="element">&ltli&gt</span><br>
@@ -1854,7 +1887,12 @@
             </li>
             <br>
             <li><span class="element">&ltlink&gt</span><br>
-                <p>Representa la relación entre el documento y una fuente externa.</p>
+                <p>Representa la relación entre el documento HTML y una fuente externa. Puede usarse, por ejemplo, para vincular el documento con una hoja de estilos de CSS. Únicamente puede insertarse en el elemento <span class="element">&lthead&gt</span>. <br>Sus atributos principales son: 
+                <ul>
+                    <li><span class="atribute">href=""</span> contiene el URL de la fuente que se desea vincular, ya sea en tu servidor o una página de internet.</li>
+                    <br>
+                    <li><span class="atribute">rel=""</span> especifica el tipo de relación que el documento tiene con la fuente, por ejemplo: <span class="atribute">stylesheet</span> sirve para una hoja de estilos CSS.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltmain&gt</span><br>
@@ -2054,7 +2092,7 @@
             </li>
             <br>
             <li><span class="element">&ltul&gt</span><br>
-                <p>Define listas desordenadas.</p>
+                <p>Significa unordered list, una lista que no ordena sus items, sino que los marca con símbolos, ya sean círculos, cuadrados, etc.</p>
             </li>
             <br>
             <li><span class="element">&ltvar&gt</span><br>
