@@ -1896,15 +1896,40 @@
             </li>
             <br>
             <li><span class="element">&ltmain&gt</span><br>
-                <p>Representa el contenido principal del documento HTML, todo lo que contenga es mostrado en la página.</p>
+                <p>Representa el contenido principal del elemento <span class="element">&ltbody&gt</span>, se inserta dentro de él. <br>Es recomendable usarlo únicamente en el elemento <span class="element">&ltbody&gt</span> y recordar que solo puede haber uno solo.</p>
             </li>
             <br>
             <li><span class="element">&ltmap&gt</span><br>
-                <p>Define una imagen de mapa con áreas activas.</p>
+                <p>Define una imagen de mapa con áreas activas. Para ese propósito se usa junto a la etiqueta <span class="element">&ltarea&gt</span>. La primera define el mapa, la segunda las áreas clickeables. <br>Su atributo especifíco es <span class="atribute">name=""</span>, cuyo valor es el nombre de la imagen de mapa.</p>
             </li>
             <br>
             <li><span class="element">&ltmark&gt</span><br>
-                <p>Representa texto destacado.</p>
+                <p>Representa texto destacado, se usa para remarcar texto importante, como cuando se subraya ideas importantes en un <mark>libro</mark>.</p>
+            </li>
+            <br>
+            <li><span class="element">&ltmarquee&gt</span><br>
+                <p>Esta etiqueta no es estándar en HTML, se usa para desplazar horizontalmente o verticalmente una imagen o texto. <br>Sus atributos son: 
+                <ul>
+                    <li><span class="atribute">behavior=""</span> le permite al usuario configurar el comportamiento del elemento en uno de los tres tipos: <span class="atribute">scroll, slide, alternate</span>.</li>
+                    <br>
+                    <li><span class="atribute">direction=""</span> define la dirección en la que se desplaza el contenido, ya sea <span class="atribute">left, right, up, down</span>.</li>
+                    <br>
+                    <li><span class="atribute">width=""</span> define el ancho del elemento en pixeles o porcentaje.</li>
+                    <br>
+                    <li><span class="atribute">height=""</span> define la altura del elemento en pixeles o porcentaje.</li>
+                    <br>
+                    <li><span class="atribute">hspace=""</span> define el espacio horizontal alrededor del elemento en pixeles.</li>
+                    <br>
+                    <li><span class="atribute">vspace=""</span> define el espacio vertical alrededor del elemento en pixeles.</li>
+                    <br>
+                    <li><span class="atribute">scrolldelay=""</span> define la demora del desplazo en segundos.</li>
+                    <br>
+                    <li><span class="atribute">scrollamount=""</span> define la cantidad de movimiento en un número.</li>
+                    <br>
+                    <li><span class="atribute">loop=""</span> define un loop para el contenido del elemento en un número.</li>
+                    <br>
+                    <li><span class="atribute">bgcolor=""</span> define el background color.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltmenu&gt</span><br>
