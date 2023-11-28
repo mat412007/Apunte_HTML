@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="refresh" content="50">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apunte HTML</title>
     <link rel="stylesheet" href="styles.css">
@@ -1933,27 +1934,62 @@
             </li>
             <br>
             <li><span class="element">&ltmenu&gt</span><br>
-                <p>Se representa a sí mismo como una alternativa de <span class="element">&ltul&gt</span>.</p>
+                <p>Esta etiqueta especifica una lista o menú de comandos que el usuario puede ejecutar. En su interior uno o más <span class="element">&ltmenuitem&gt</span> o <span class="element">&ltli&gt</span>. <br>Sus atributos específicos son:
+                <ul>
+                    <li><span class="atribute">label=""</span> especifica la etiqueta para el menu.</li>
+                    <br>
+                    <li><span class="atribute">type=""</span> especifica el tipo de menu en un documento HTML.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltmenuitem&gt</span><br>
-                <p>Define un comando que el usuario puede invocar desde un menu de aparición.</p>
+                <p>Define un comando que el usuario puede invocar desde un menu de aparición, un <span class="element">&ltmenu&gt</span>.</p>
             </li>
             <br>
             <li><span class="element">&ltmeta&gt</span><br>
-                <p>Define metadata de un documento HTML.</p>
+                <p>Esta etiqueta define la metadata de un documento HTML. Especifica la descripción de la página, keywords, lenguaje, autor, etc. <br>Esta información no es visible en la página, si no que le muestra al navegador información sobre ella a la hora de abrir el documento. Debido a esto, se ubica dentro del elemento <span class="element">&lthead&gt</span>. <br>Algunos ejemplos de esta etiqueta en acción son:
+                <ul>
+                    <li>&lt<span class="element">meta</span> <span class="atribute">charset="UTF-8"</span> &gt <br>Esta nos dice que el documento soportará desplegar cualquier lenguaje.</li>
+                    <br>
+                    <li>&lt<span class="element">meta</span> <span class="atribute">name="keywords"</span> <span class="atribute">content="HTML, CSS, JavaScript, Tutorials"</span> &gt</li>
+                    <br>
+                    <li>&lt<span class="element">meta</span> <span class="atribute">name="description</span> <span class="atribute">content="Free Online Tutorials"</span> &gt</li>
+                    <br>
+                    <li>&lt<span class="element">meta</span> <span class="atribute">name="author"</span> <span class="atribute">content="Alan Turing"</span> &gt</li>
+                    <br>
+                    <li>&lt<span class="element">meta</span> <span class="atribute">name="refresh"</span> <span class="atribute">content="50"</span> &gt <br>El navegador se reiniciará automáticamente el contenido cada 50 segundos.</li>
+                    <br>
+                    <li>&lt<span class="element">meta</span> <span class="atribute">http-equiv="refresh"</span> <span class="atribute">content="5;url=https://www.google.com/html-tag-list"</span> &gt <br>Después de que se cumpla el tiempo asignado, 5 segundos en este caso, nos dirigiremos al URL que hayamos insertado.</li>
+                    <br>
+                    <li>&lt<span class="element">meta</span> <span class="atribute">name="viewport"</span> <span class="atribute">content="width=device-width, initial-scale=1.0"</span> &gt <br>Esta etiqueta controla la dimensión de la página y la escala del tamaño. Con esta etiqueta, la página se ajustará al tamaño de cualquier dispositivo en la que se abra.</li>
+                </ul></p>
             </li>
             <br> 
             <li><span class="element">&ltmeter&gt</span><br>
-                <p>Define una medida escalar dentro de un rango conocido, o un valor fraccionario.</p>
+                <p>Es usada para medir data dentro del rango dado, define una medida a escala. <br>Sus atributos especificos son:
+                <ul>
+                    <li><span class="atribute">value=""</span> es totalmente obligatorio, representa un valor numérico, entero o con coma.</li>
+                    <br>
+                    <li><span class="atribute">form=""</span> especifica uno o más <span class="element">&ltform&gt</span> al que la etiqueta pertenece.</li>
+                    <br>
+                    <li><span class="atribute">high=""</span> especifica un rango que es considerado alto.</li>
+                    <br>
+                    <li><span class="atribute">low=""</span> especifica un rango que es considerado bajo.</li>
+                    <br>
+                    <li><span class="atribute">max=""</span> especifica el rango máximo, el más alto.</li>
+                    <br>
+                    <li><span class="atribute">min=""</span> especifica el rango mínimo, el más bajo.</li>
+                    <br>
+                    <li><span class="atribute">optimum=""</span> especifica el valor óptimo para el elemento.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltnav&gt</span><br>
-                <p>Define una sección de la página que representa links de navegación.</p>
+                <p>Se usa para representar una sección que contiene links de navegación para guiarte a través de páginas amplias con varios contenidos o para acceder a páginas diferentes relacionadas con la actual.</p>
             </li>
             <br>
             <li><span class="element">&ltnoscript&gt</span><br>
-                <p>Provee un contenido alternativo en caso de que un tipo de scipt no se soporte por el navegador.</p>
+                <p>Esta etiqueta se usa para definir una alternativa de contenido para los usuarios que tienen el scripting deshabilitado y desean acceder a la página web. <br>Puede usarse dentro de los elementos de <span class="element">&lthead&gt</span> y <span class="element">&ltbody&gt</span>. Si se inserta dentro de head, debe contener las etiquetas de <span class="element">&ltlink&gt, &ltstyle&gt, &ltmeta&gt</span>. <br>Básicamnete, el contenido de este elemento se insertará en la página web si el script está desactivado, como una etiqueta de advertencia.</p>
             </li>
             <br>
             <li><span class="element">&ltobject&gt</span><br>
