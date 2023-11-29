@@ -1993,11 +1993,37 @@
             </li>
             <br>
             <li><span class="element">&ltobject&gt</span><br>
-                <p>Esta etiqueta define el contenedor de un recurso externo.</p>
+                <p>Esta etiqueta actúa como contenedor para archivos multimedia en una página web. Estos archivos pueden ser una imagen, un video, audio, PDF, o hasta otra página web. <br>Esta etiqueta se usa junto a <span class="element">&ltparam&gt</span>, esta se usa para setear parámetros. <br>Si insertas texto dentro del elemento <span class="element">&ltobject&gt</span>, solo aparecerá si el usuario no acepta la etiqueta. <br>Sus atributos son:
+                <ul>
+                    <li><span class="atribute">data=""</span> contiene el URL del archivo multimedia que se desea insertar.</li>
+                    <br>
+                    <li><span class="atribute">border=""</span> define el borde del archivo insertado en pixeles.</li>
+                    <br>
+                    <li><span class="atribute">name=""</span> define el nombre del elemento, útil cuando hay que agregar JavaScript o algún lenguaje interactivo.</li>
+                    <br>
+                    <li><span class="atribute">height=""</span> define la altura del elemento.</li>
+                    <br>
+                    <li><span class="atribute">width=""</span> define el ancho del elemento.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltol&gt</span><br>
-                <p>Significa ordered list, una lista que puede estar ordenada por números o letras en cualquier orden.</p>
+                <p>Significa ordered list o numbered list, una lista que puede estar ordenada por números o letras en cualquier orden. <br>Según lo que insertes en el atributo <span class="atribute">type=""</span> la apariencia de la lista cambia:
+                <ul>
+                    <li><span class="atribute">type="1"</span> ordena la lista con números.</li>
+                    <br>
+                    <li><span class="atribute">type="I"</span> la lista se ordena con números romanos en mayúscula.</li>
+                    <br>
+                    <li><span class="atribute">type="i"</span>la lista se ordena con números romanos en minúscula.</li>
+                    <br>
+                    <li><span class="atribute">type="A"</span> ordena la lista con letras mayúsculas.</li>
+                    <br>
+                    <li><span class="atribute">type="a"</span> ordena la lista con letras minúsculas.</li>
+                    <br>
+                    <li><span class="atribute">start=""</span> establece el valor por el que la lista comienza a ordenar las cosas.</li>
+                    <br>
+                    <li><span class="atribute">reversed</span> hace que la lista enumere las cosas en orden opuesto.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltoptgroup&gt</span><br>
