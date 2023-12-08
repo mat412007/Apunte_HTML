@@ -2049,39 +2049,58 @@
             </li>
             <br>
             <li><span class="element">&ltoutput&gt</span><br>
-                <p>Se usa como contenedor que muestra el resultado de un cálculo.</p>
+                <p>Se usa para desplegar el resultado de un cálculo realizado por JavaScript o la salida de una acción del usuario como la inserción de data. <br>Sus atributos son:
+                <ul>
+                    <li><span class="atribute">for=""</span> especifica la lista de los <span class="atribute">id=""</span> de los otros elementos relacionados con la salida que este despliega.</li>
+                    <br>
+                    <li><span class="atribute">form=""</span> especifica el <span class="atribute">id=""</span> del elemento <span class="element">&ltform&gt</span> relacionado.</li>
+                    <br>
+                    <li><span class="atribute">name=""</span> define el nombre para el elemento.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltp&gt</span><br>
-                <p>Representa un párrafo en un documento HTML.</p>
+                <p>Es usada para desplegar un párrafo en HTML. Este elemento añade una línea de separación por arriba y debajo del elemento. Este elemento es usualemente acompañado por <span class="element">&ltbr&gt</span> y <span class="element">&lthr&gt</span>.</p>
             </li>
             <br>
             <li><span class="element">&ltparam&gt</span><br>
-                <p>Se usa para definir parámetros de un objeto, <span class="element">&ltobject&gt</span>, sus atributos son <span class="atribute">name=""</span> y <span class="atribute">value=""</span>.</p>
+                <p>Se usa para definir parámetros de un objeto, <span class="element">&ltobject&gt</span>, este elemento se inserta dentro del segundo. Se insertan al comienzo del contenido, puede haber más de uno, y deben tener mínimo un <span class="atribute">name=""</span> y un <span class="atribute">value=""</span> cada uno. <br>Sus atributos son:
+                <ul>
+                    <li><span class="atribute">name=""</span> especifica el nombre del parametro.</li>
+                    <br>
+                    <li><span class="atribute">value=""</span> determina el valor del parametro.</li>
+                    <br>
+                    <li><span class="atribute">type=""</span> especifica el tipo de contenido del <span class="element">&ltobject&gt</span>.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltpicture&gt</span><br>
-                <p>Este elemento provee mayor flexibilidad para especificar los recursos de una imagen, contiene 2 etiquetas, <span class="element">&ltsource&gt</span> y <span class="element">&ltimg&gt</span>.</p>
+                <p>Esta etiqueta es usada en diseños responsivos cuando hay que cargar diferentes imagenes basandose en el punto de vista, alto, ancho, orientación y densidad de pixeles. <br>La etiqueta contiene uno o más <span class="element">&ltsource&gt</span> y un solo <span class="element">&ltimg&gt</span>.</p>
             </li>
             <br>
             <li><span class="element">&ltpre&gt</span><br>
-                <p>Provee texto predeterminado en un documento HTML.</p>
+                <p>Especifica texto preformateado. Desplega texto con ancho arreglado. Usualmente es usado para desplegar lenguaje de código como si hubiese sido tipeado.</p>
             </li>
             <br>
             <li><span class="element">&ltprogress&gt</span><br>
-                <p>Define el progreso de una recuesta dentro de un documento HTML.</p>
+                <p>Se usa para desplegar el progreso de un pedido. Provee una manera simple de crear una barra de progreso en el sitio web. Usualmente se usa para desplegar una barra de carga para archivos que están siendo descargados. Para completar su funcionamiento y progreso uno debe usar JavaScript. <br>Sus atributos son:
+                <ul>
+                    <li><span class="atribute">value=""</span> define de que tanto la tarea ha sido completada.</li>
+                    <br>
+                    <li><span class="atribute">max=""</span> define de que tanto trabajo requiere la tarea para ser completada.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltrp&gt</span><br>
-                <p>Representa una alternativa para la etiqueta <span class="element">&ltruby&gt</span> en caso de que esta no sea válida en el buscador.</p>
+                <p>Representa una alternativa para la etiqueta <span class="element">&ltruby&gt</span> en caso de que esta no sea válida en el buscador. Este otro elemento se usa para desplegar lenguajes asiáticos. Dentro de <span class="element">&ltrp&gt</span> tenemos el elemento <span class="element">&ltrt&gt</span>, el cual contiene el texto anotado.</p>
             </li>
             <br>
             <li><span class="element">&ltrt&gt</span><br>
-                <p>Define explicaciones y pronunciaciones en anotaciones ruby.</p>
+                <p>Esta etiqueta provee traducción, pronunciación e información de lenguajes asiáticos en anotación dentor de <span class="element">&ltruby&gt</span>, se coloca dentro de este elemento.</p>
             </li>
             <br>
             <li><span class="element">&ltruby&gt</span><br>
-                <p>Representa anotaciones ruby.</p>
+                <p>Representa anotaciones ruby en la página. Se usa para anotar lenguajes asiáticos como chino y japonés. Dentro suyo están los elementos <span class="element">&ltrp&gt</span> y <span class="element">&ltrt&gt</span>.</p>
             </li>
             <br>
             <li><span class="element">&lts&gt</span><br>
