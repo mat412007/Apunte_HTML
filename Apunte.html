@@ -2104,31 +2104,66 @@
             </li>
             <br>
             <li><span class="element">&lts&gt</span><br>
-                <p>Representa texto que no es importante.</p>
+                <p>Representa la sección del contenido sin importancia o precisión, se presenta con una línea horizontal a traves de él.</p>
             </li>
             <br>
             <li><span class="element">&ltsamp&gt</span><br>
-                <p>Se usa para representar output de un programa de computadora.</p>
+                <p>Encierra una frase que representa el output de un programa de computación en el navegador. Su contenido aparece en formato monospace.</p>
             </li>
             <br>
             <li><span class="element">&ltscript&gt</span><br>
-                <p>Se usa para declarar JavaScript dentro del documento HTML.</p>
+                <p>Se usa para especificar código de lenguaje script como JavaScript, de esta manera el código está más a la mano y todo está en la misma página. Sin embargo, también se puede usar para linkear un archivo de JavaScript por separado. <br>Sus atributos son:
+                <ul>
+                    <li><span class="atribute">src=""</span> especifica el URL de una fuente de script externa.</li>
+                    <br>
+                    <li><span class="atribute">type=""</span> especifica el tipo de media del script.</li>
+                    <br>
+                    <li><span class="atribute">async=""</span> es un valor booleano que especifica que el script es ejecutado asincrónicamente.</li>
+                    <br>
+                    <li><span class="atribute">defer=""</span> es un valor booleano que es usado para indicar que el script es ejecutado después de que el documento haya sido analizado.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltsection&gt</span><br>
-                <p>Define una sección genérica para el documento.</p>
+                <p>Se usa para definir una sección en un documento. Una página está dividida en varias secciones como headers, footers, y otras secciones diferentes.</p>
             </li>
             <br>
             <li><span class="element">&ltselect&gt</span><br>
-                <p>Representa un control que provee una lista de opciones con la etiqueta <span class="element">&ltoption&gt</span>.</p>
+                <p>Se usa para crear un dropdown list con opciones múltiples. Para crear las opciones de esta lista se usa el elemento <span class="element">&ltoption&gt</span>. También está el elemento <span class="element">&ltoptgroup&gt</span> para agrupar diferentes opciones relacionadas en una misma lista. Para enviar información de este elemento al servidor se debe usar dentro del elemento <span class="element">&ltform&gt</span>. <br>Sus atributos son:
+                <ul>
+                    <li><span class="atribute">autofocus="autofocus"</span> permite que nos autoenfoquemos en la lista tan pronto la página se carga.</li>
+                    <br>
+                    <li><span class="atribute">disabled="disabled"</span> deshabilita la lista de opciones que esté configurada de esta manera.</li>
+                    <br>
+                    <li><span class="atribute">form=""</span> contiene el <span class="atribute">id=""</span> del <span class="element">&ltform&gt</span> en el que esté el elemento.</li>
+                    <br>
+                    <li><span class="atribute">multiple="multiple</span> especifica que el usuario puede seleccionar más de una sola opción de la lista.</li>
+                    <br>
+                    <li><span class="atribute">name=""</span> especifica el nombre de la lista de opciones.</li>
+                    <br>
+                    <li><span class="atribute">required=""</span> especifica que el usuario debe seleccionar una opción de la lista antes de poder entregar el formulario.</li>
+                    <br>
+                    <li><span class="atribute">size=""</span> especifica el número visible de opciones de la lista.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltsmall&gt</span><br>
-                <p>Representa texto un tamaño más pequeño que el tamaño base del documento.</p>
+                <p>Su función es setear el tamaño del texto que contenga un número que el tamaño de fuente del documento.</p>
             </li>
             <br>
             <li><span class="element">&ltsource&gt</span><br>
-                <p>Define recursos para elementos media como <span class="element">&ltpicture&gt &ltvideo&gt &ltaudio&gt</span>.</p>
+                <p>Esta etiqueta es usada como hijo de un elemento para representar más de una fuente media para <span class="element">&ltaudio&gt</span>, <span class="element">&ltvideo&gt</span>, y <span class="element">&ltpicture&gt</span>. <br>Sus atributos on:
+                <ul>
+                    <li><span class="atribute"></span></li>
+                    <br>
+                    <li><span class="atribute"></span></li>
+                    <br>
+                    <li><span class="atribute"></span></li>
+                    <br>
+                    <li><span class="atribute"></span></li>
+                    <br>
+                    <li><span class="atribute"></span></li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltspan&gt</span><br>
