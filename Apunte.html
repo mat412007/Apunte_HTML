@@ -2179,67 +2179,97 @@
             </li>
             <br>
             <li><span class="element">&ltsub&gt</span><br>
-                <p>Define texto que se despliega como texto de subscripción.</p>
+                <p>Define texto que se muestra atravesando la línea de escritura inferior, y por defecto se presenta más pequeño. H<sub>2</sub>O.</p>
             </li>
             <br>
             <li><span class="element">&ltsummary&gt</span><br>
-                <p>Define un resumen que puede ser usado con la etiqueta <span class="element">&ltdetails&gt</span>.</p>
+                <p>Define texto que actúa como título para la etiqueta <span class="element">&ltdetails&gt</span>.</p>
             </li>
             <br>
             <li><span class="element">&ltsup&gt</span><br>
-                <p>Define texto que se representa como texto de superescripción.</p>
+                <p>Define texto que se representa como texto de superescripción, se presenta atravesando la línea de escritura superior, y por defecto más pequeño. 2<sup>10</sup></p>
             </li>
             <br>
             <li><span class="element">&ltsvg&gt</span><br>
-                <p>Se usa como contenedor para SVG(Scalable Vector Graphics).</p>
+                <p>Se usa como contenedor para SVG (Scalable Vector Graphics). Se usa para definir gráficos para la web. Con este elemento uno puede dibujar caminos, cajas, círculos, texto e imagenes gráficas. Para insertar estas figuras uno debe insertar diferentes etiquetas con un nombre diferente cada una, como si fuese otro lenguaje de programación.</p>
             </li>
             <br>
             <li><span class="element">&lttable&gt</span><br>
-                <p>Se usa para crear una tabla dentro del documento HTML.</p>
+                <p>Se usa para crear una tabla dentro del documento HTML. Contiene otras etiquetas en su interior para especificar la estructura y contenido de la tabla. Como <span class="element">&lttr&gt</span>, <span class="element">&ltth&gt</span> y <span class="element">&lttd&gt</span>.</p>
             </li>
             <br>
             <li><span class="element">&lttbody&gt</span><br>
-                <p>Se usa para representar el contenido principal de una tabla, junto con <span class="element">&ltthead&gt</span>.</p>
+                <p>Se usa para representar el contenido principal de una tabla, junto con <span class="element">&ltthead&gt</span> y <span class="element">&ltcaption&gt</span>.</p>
             </li>
             <br>
             <li><span class="element">&lttd&gt</span><br>
-                <p>Significa table data, se usa para definir celdas de información de un tabla de HTML.</p>
+                <p>Significa table data, se usa para definir celdas de información de un tabla de HTML, las celdas y columnas están formadas por ellas.</p>
             </li>
             <br>
             <li><span class="element">&lttemplate&gt</span><br>
-                <p>Contiene contenido que no va a ser desplegado a menos que uses JavaScript.</p>
+                <p>Contiene contenido que no va a ser desplegado a menos que uses JavaScript para desplegarlo.</p>
             </li>
             <br>
             <li><span class="element">&lttextarea&gt</span><br>
-                <p>Cumple la función de un <span class="element">&ltinput&gt</span>, pero de varias líneas.</p>
+                <p>Cumple la función de un <span class="element">&ltinput&gt</span>, pero de varias líneas. <br>Sus atributos son:
+                <ul>
+                    <li><span class="atribute">autocomplete=""</span> especifica si el navegador puede autocompletar la palabra o frase que el usuario esté insertando teniendo en cuenta que la haya insertado anteriormente. Sus posibles valores son: <span class="atribute">on</span> o <span class="atribute">off</span>.</li>
+                    <br>
+                    <li><span class="atribute">autofocus</span> este atributo booleano te permite especificar que un control de un formulario adquiera el foco cuando se carga la página.</li>
+                    <br>
+                    <li><span class="atribute">cols=""</span> su valor por defecto es 20, su propósito es especificar el ancho del control.</li>
+                    <br>
+                    <li><span class="atribute">disabled</span> especifica que el control está deshabilitado.</li>
+                    <br>
+                    <li><span class="atribute">form=""</span> contiene el id del formulario al que el elemento pertenece.</li>
+                    <br>
+                    <li><span class="atribute">maxlenght="" minlenght=""</span> especifican el mínimo y máximo de carácteres que deben ser insertados.</li>
+                    <br>
+                    <li><span class="atribute">name=""</span> especifica el nombre del control.</li>
+                    <br>
+                    <li><span class="atribute">placeholder=""</span> contiene el texto que aparecerá en el control antes de que el usuario inserte contenido propio, usualemente se usa para señalar que tipo de información debe insertarse.</li>
+                    <br>
+                    <li><span class="atribute">readonly</span> este atributo booleano indica que el usuario no puede modificar el valor del control, sin embargo esto no cambia el hecho de que algo ya debería estar insertado.</li>
+                    <br>
+                    <li><span class="atribute">required</span> especifica que el control debe ser completado antes de que el formulario pueda ser enviado.</li>
+                    <br>
+                    <li><span class="atribute">rows=""</span> especifica las filas visibles del control.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&lttfoot&gt</span><br>
-                <p>Define el contenido inferior de una tabla HTML.</p>
+                <p>Define el contenido inferior de una tabla HTML, usualmente la última fila de la tabla.</p>
             </li>
             <br>
             <li><span class="element">&ltth&gt</span><br>
-                <p>Define la cabezera de una columna de una tabla de HTML.</p>
+                <p>Define la cabezera de una columna de una tabla de HTML, son insertadas en un <span class="element">&lttr&gt</span> dentro de <span class="element">&ltthead&gt</span>.</p>
             </li>
             <br>
             <li><span class="element">&ltthead&gt</span><br>
                 <p>Define la parte superior de una tabla, las cabezeras de las columnas, los <span class="element">&ltth&gt</span>.</p>
             </li>
             <br>
-            <li><span class="element">&lttime&gt</span><br>
-                <p>Se usa para definir tiempo dentro de un documento HTML.</p>
-            </li>
-            <br>
             <li><span class="element">&lttitle&gt</span><br>
-                <p>Define el nombre o título de la página.</p>
+                <p>Define el nombre o título de la página, se inserta dentro del <span class="element">&lthead&gt</span>, después de todo su contenido no es visible en la página, aparece en la barra de navegación junto con la dirección completa de la página, su URL.</p>
             </li>
             <br>
             <li><span class="element">&lttr&gt</span><br>
-                <p>Significa table row, representa casilleros en fila de una tabla de HTML.</p>
+                <p>Significa table row, representa una fila en una tabla de HTML, en su interior hay múltiples <span class="atribute">&lttd&gt</span>, los cuales son las celdas de información de cada fila.</p>
             </li>
             <br>
             <li><span class="element">&lttrack&gt</span><br>
-                <p>Define marcas de texto para las etiquetas <span class="element">&ltaudio&gt</span> y <span class="element">&ltvideo&gt</span>.</p>
+                <p>Define guías de subtítulos para los elementos <span class="element">&ltaudio&gt</span> y <span class="element">&ltvideo&gt</span>, dentro de ellos. Sus atributos son:
+                <ul>
+                    <li><span class="atribute">default</span> especifica que el usuario tiene la opción de usar las subtítulos o no.</li>
+                    <br>
+                    <li><span class="atribute">kind=""</span> especifica el tipo de subtítulo, ya sea mayúscula, predeterminado, etc.</li>
+                    <br>
+                    <li><span class="atribute">label=""</span> especifica el título de la guía de subtítulos.</li>
+                    <br>
+                    <li><span class="atribute">src=""</span> especifica el URL del archivo en el que se desea usar los subtítulos.</li>
+                    <br>
+                    <li><span class="atribute">srclang=""</span> especifica el lenguaje de los subtitulos.</li>
+                </ul></p>
             </li>
             <br>
             <li><span class="element">&ltu&gt</span><br>
