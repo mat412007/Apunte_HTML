@@ -1,6 +1,5 @@
-function esconderFrutas(){
-    let x = document.getElementById("frutas");
-    for(let i = 0; i < x.length; i++){
-        x[i].style.display = "none";
-    }
+function dark(){
+    let h = document.getElementById('Información general de HTML');
+    console.log(h.textContent);
+    h.childNodes.style.color = "green";
 }
