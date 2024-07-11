@@ -60,11 +60,11 @@ table{
     width: 300px;
 }
 
-#Indice{
+#Indices, #Marcadores{
     font-size: 18px;
 }
 
-#Indice div{
+#Indices div, #Marcadores div{
     margin-left: 30px;
     margin-right: 30px ;
 }
