@@ -1,8 +1,9 @@
 body{
-    background-image: url(html-5-simbolo-3d-hermoso-icono-html-5-render-3d_582637-318.avif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    /*background-image: url(html-5-simbolo-3d-hermoso-icono-html-5-render-3d_582637-318.avif);*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
+    background-color: rgb(218, 218, 218);
     color: black;
     font-size: 17px;
     font-weight: 500;
@@ -25,7 +26,7 @@ body{
 }
 
 .content{
-    color: orange;
+    color: rgb(235, 152, 0);
 }
 
 #Halcon{
